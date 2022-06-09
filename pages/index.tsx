@@ -4,9 +4,32 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+      <section>
+        <h1>Content</h1>
+        <p>fara</p>
+      </section>
+    </>
   )
 }
 
