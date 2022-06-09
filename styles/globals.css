@@ -4,6 +4,6 @@
 
 @layer base {
     section {
-        @apply
+        @apply relative 
     }
 }
