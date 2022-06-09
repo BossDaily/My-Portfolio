@@ -4,6 +4,6 @@
 
 @layer base {
     section {
-        @apply relative flex flex-col items-center p-[100px]
+        @apply relative flex flex-col items-center p-[100px] min-h-[400px] w-[20]
     }
 }
