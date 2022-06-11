@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-layered-waves": "https://raw.githubusercontent.com/BossDaily/My-Portfolio/main/public/stats_bottom_wave1.svg",
+        waves: 'https://raw.githubusercontent.com/BossDaily/My-Portfolio/main/public/stats_bottom_wave1.svg'
       },
     },
   },
