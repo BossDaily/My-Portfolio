@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-layered-waves": '/public/hero_layered_waves1.svg'
+      }
+    },
   },
   plugins: [],
 }
