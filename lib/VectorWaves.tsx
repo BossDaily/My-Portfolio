@@ -1,4 +1,5 @@
 import { NextComponentType, NextPage } from "next";
+import Image from 'next/image'
 
 interface Props {
     url: String
