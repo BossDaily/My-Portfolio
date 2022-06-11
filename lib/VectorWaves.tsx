@@ -1,6 +1,6 @@
-const VectorWaves = () => {
+const VectorWaves = ({url}: string) => {
     return (
-        <div></div>
+        <div className={`aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-[url(${url})]`}></div>
     );
 }
 
