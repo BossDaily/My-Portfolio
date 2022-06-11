@@ -1,4 +1,4 @@
-import { NextComponentType } from "next";
+import { NextComponentType, NextPage } from "next";
 
 interface Props {
     url: String
