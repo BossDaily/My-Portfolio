@@ -1,7 +1,7 @@
 import type { NextComponentType, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import VectorWaves from '../components/VectorWaves'
+import VectorWaves from '../components/Waves/BottomVectorWaves'
 
 const Home: NextPage = () => {
   return (
