@@ -8,7 +8,7 @@ interface Props {
 const VectorWaves: NextPage<Props> = (props) => {
     const { url } = props
     return (
-        <div style={{ backgroundImage:`url(${url})` }} className="aspect-[960/300] w-full bg-no-repeat bg-center bg-cover mt-[-2px] " />
+        <div style={{ backgroundImage:`url(${url})` }} className="aspect-[960/300] w-full bg-no-repeat bg-center bg-cover mt-[-2px] mb-[-10rem]" />
     );
 }
 
