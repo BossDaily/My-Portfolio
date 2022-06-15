@@ -8,6 +8,7 @@
   "dependencies": {
     "flowbite": "^1.4.7",
     "flowbite-react": "^0.0.26",
+    "framer-motion": "^6.3.11",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
