@@ -2,7 +2,7 @@ import Image from "next/image";
 import { NextPage, NextComponentType } from "next";
 
 interface Props {
-    url: String
+    url: string
     
 }
 
