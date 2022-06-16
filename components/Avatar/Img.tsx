@@ -10,7 +10,7 @@ const Img: NextPage<Props> = (props) => {
     const { url } = props
 
     const loaderProp =({ src, width }) => {
-        return `${src}?size=${width}`;
+        return `${src}?size=${width - 56}`;
       }
 
     return (
