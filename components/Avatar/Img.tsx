@@ -14,6 +14,7 @@ const Img: NextPage<Props> = (props) => {
             src={url}
             alt='BossDailys pfp'
             placeholder='blur'
+            className="w-10 h-10 rounded-full"
         />
     );
 }
