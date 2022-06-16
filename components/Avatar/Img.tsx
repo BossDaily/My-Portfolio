@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NextPage } from "next";
+import { NextPage, NextComponentType } from "next";
 
 const Img = () => {
     return (
