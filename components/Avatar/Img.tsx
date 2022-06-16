@@ -16,7 +16,7 @@ const Img: NextPage<Props> = (props) => {
 
     return (
         
-        <div className=" rounded-full ring p-1 overflow-visible" style={{ '--tw-ring-color': 'rgb(22 163 74)'}}>
+        <div className=" rounded-full ring p-1 overflow-visible max-w-sm" style={{ '--tw-ring-color': 'rgb(22 163 74)'}}>
             <Image 
             src={url}
             alt='BossDailys pfp'
