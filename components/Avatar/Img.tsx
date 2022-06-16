@@ -3,9 +3,9 @@ import { NextPage } from "next";
 
 const Img = () => {
     return (
-        <div>
-            Enter
-        </div>
+        <Image 
+            src={''}
+        />
     );
 }
 
