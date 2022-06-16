@@ -15,15 +15,17 @@ const Img: NextPage<Props> = (props) => {
       }
 
     return (
-        <Image 
-            style={{ '--tw-ring-color': 'rgb(22 163 74)' }}
+        
+        <div className=" rounded-full ring p-1 overflow-visible" style={{ '--tw-ring-color': 'rgb(22 163 74)'}}>
+            <Image 
             src={url}
             alt='BossDailys pfp'
-            className="w-10 h-10 rounded-full ring p-1 overflow-visible"
+            className="rounded-full"
             height={1024}
             width={1024}
             loader={loaderProp}
-        />
+            />
+        </div>
     );
 }
 
