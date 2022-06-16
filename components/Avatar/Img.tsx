@@ -9,14 +9,18 @@ interface Props {
 const Img: NextPage<Props> = (props) => {
     const { url } = props
 
+    const loaderProp =({ src, width }) => {
+        return `${src}?size=${width}`;
+      }
+
     return (
         <Image 
             src={url}
             alt='BossDailys pfp'
-            placeholder='blur'
             className="w-10 h-10 rounded-full"
-            blurDataURL={url}
-            layout='fill'
+            height={1024}
+            width={1024}
+            loader={loaderProp}
         />
     );
 }
