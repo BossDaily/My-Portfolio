@@ -1,10 +1,17 @@
 import Image from "next/image";
 import { NextPage, NextComponentType } from "next";
 
-const Img = () => {
+interface Props {
+    url: String
+    
+}
+
+const Img: NextPage<Props> = (props) => {
+    const { url } = props
+
     return (
         <Image 
-            src={''}
+            src={url}
         />
     );
 }
