@@ -3,6 +3,7 @@ import { NextPage, NextComponentType } from "next";
 
 interface Props {
     url: string
+    borderColor: string
     
 }
 
