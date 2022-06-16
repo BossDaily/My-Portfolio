@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Img from "./Img";
 
 const Avatar = () => {
     return (
