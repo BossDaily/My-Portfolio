@@ -12,6 +12,7 @@ const Img: NextPage<Props> = (props) => {
     return (
         <Image 
             src={url}
+            placeholder='blur'
         />
     );
 }
