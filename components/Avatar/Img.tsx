@@ -16,6 +16,7 @@ const Img: NextPage<Props> = (props) => {
             placeholder='blur'
             className="w-10 h-10 rounded-full"
             blurDataURL={url}
+            layout='fill'
         />
     );
 }
