@@ -14,10 +14,16 @@ const Avatar = () => {
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
-                <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(222, 222, 222)" />
+                <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" />
             </div>
         )
-    }
+    } else if (loading === false && status?.discord_status === "idle") {
+        return (
+            <div className="relative overflow-visible">
+                <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(250, 168, 26)" />
+            </div>
+        )
+    } 
 
 }
 
