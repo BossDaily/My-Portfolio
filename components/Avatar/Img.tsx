@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Image, { ImageLoaderProps } from "next/image";
 import { NextPage, NextComponentType } from "next";
 
