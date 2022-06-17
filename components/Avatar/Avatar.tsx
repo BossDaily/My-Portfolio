@@ -9,8 +9,6 @@ const Avatar = () => {
         userId: '274973338676494347',
         socket: true
     })
-    console.log(status)
-    console.log(loading)
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
