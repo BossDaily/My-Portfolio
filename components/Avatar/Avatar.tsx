@@ -27,7 +27,7 @@ const Avatar = () => {
                 <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(237, 66, 69)" />
             </div>
         )
-    } else {
+    } else if (loading === false && status?.discord_status === "offline") {
         return (
             <div className="relative overflow-visible">
                 <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(116, 127, 141)" />
