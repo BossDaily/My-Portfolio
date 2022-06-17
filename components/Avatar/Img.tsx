@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
 import { NextPage, NextComponentType } from "next";
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 const Img: NextPage<Props> = (props) => {
     const { url, borderColor } = props
 
-    const loaderProp =({ src, width }) => {
+    const loaderProp =({ src, width }: ImageLoaderProps) => {
         return `${src}?size=${width - 56}`;
       }
 
