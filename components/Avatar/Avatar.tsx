@@ -10,11 +10,13 @@ const Avatar: NextPage = () => {
         socket: true
     })
     
-    return (
-        <div className="relative overflow-visible">
-            <Img url="https://cdn.discordapp.com/avatars/274973338676494347/2af179fb4264675156eb2081fea20a51.png" borderColor="" />
-        </div>
-    );
+    if (loading === false && status?.discord_status === "online"){
+        return (
+            <div className="relative overflow-visible">
+                <Img url="https://cdn.discordapp.com/avatars/274973338676494347/2af179fb4264675156eb2081fea20a51.png" borderColor="" />
+            </div>
+        )
+    }
 
 }
 
