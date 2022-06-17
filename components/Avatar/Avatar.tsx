@@ -4,16 +4,17 @@ import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
 import { NextPage } from "next";
 
-const Avatar: NextPage = () => {
+const Avatar = () => {
     const { loading, status } = useLanyard({
         userId: '274973338676494347',
         socket: true
     })
-    
+    console.log(status)
+    console.log(loading)
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
-                <Img url="https://cdn.discordapp.com/avatars/274973338676494347/2af179fb4264675156eb2081fea20a51.png" borderColor="" />
+                <Img url={`https://cdn.discordapp.com/avatars/274973338676494347/2af179fb4264675156eb2081fea20a51.png`} borderColor="rgb(222, 222, 222)" />
             </div>
         )
     }
