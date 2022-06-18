@@ -4,7 +4,7 @@ import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
 import { NextPage } from "next";
 
-const Avatar = () => {
+const Avatar: NextPage = () => {
     const { loading, status } = useLanyard({
         userId: '274973338676494347',
         socket: true

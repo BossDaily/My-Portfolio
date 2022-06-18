@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 
 import Image, { ImageLoaderProps } from "next/image";
 import { NextPage, NextComponentType } from "next";
@@ -17,7 +17,7 @@ const Img: NextPage<Props> = (props) => {
       }
 
     return (
-        
+        // @ts-ignore
         <div className=" rounded-full ring p-1 overflow-visible max-w-sm" style={{ '--tw-ring-color': `${borderColor}` }}>
             <Image 
             src={url}
