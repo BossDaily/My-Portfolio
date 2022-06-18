@@ -6,14 +6,23 @@ import { NextComponentType, NextPage, NextPageContext } from "next";
 import { Tooltip } from "flowbite-react";
 
 const Avatar: NextPage = () => {
+
     const { loading, status } = useLanyard({
         userId: '274973338676494347',
         socket: true
     })
+
+    const platform = () => {
+        switch (status) {
+            case (status?.active_on_discord_mobile): 
+                return 'Mobile'
+        }
+    }
+
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
-                <Tooltip>
+                <Tooltip content="Online on Discord fo" >
                     <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" />
                 </Tooltip>
             </div>
