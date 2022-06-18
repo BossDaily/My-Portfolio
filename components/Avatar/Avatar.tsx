@@ -12,16 +12,8 @@ const Avatar: NextPage = () => {
         socket: true
     })
 
-    const platform = () => {
-        switch (status) {
-            case (status?.active_on_discord_mobile): 
-                return 'Mobile'
-            case (status?.active_on_discord_desktop):
-                return 'Desktop'
-            default: 
-                return 'Web'
-        }
-    }
+    const platform = status?.active_on_discord_desktop ? 'Desktop' : 'Mobile'
+    
 
     if (loading === false && status?.discord_status === "online"){
         return (
