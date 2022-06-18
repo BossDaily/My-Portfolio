@@ -26,7 +26,7 @@ const Avatar: NextPage = () => {
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
-                <Tooltip content={`Online on Discord ${platform()}`} >
+                <Tooltip content={`Online on Discord ${platform()}`} style="dark" placement="bottom" trigger="hover" animation="duration-500" >
                     <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" />
                 </Tooltip>
             </div>
