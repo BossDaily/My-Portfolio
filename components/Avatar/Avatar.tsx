@@ -3,6 +3,7 @@ import Img from "./Img";
 import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
 import { NextComponentType, NextPage, NextPageContext } from "next";
+import { Tooltip } from "flowbite-react";
 
 const Avatar: NextPage = () => {
     const { loading, status } = useLanyard({
@@ -12,7 +13,9 @@ const Avatar: NextPage = () => {
     if (loading === false && status?.discord_status === "online"){
         return (
             <div className="relative overflow-visible">
-                <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" />
+                <Tooltip>
+                    <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" />
+                </Tooltip>
             </div>
         )
     } else if (loading === false && status?.discord_status === "idle") {
