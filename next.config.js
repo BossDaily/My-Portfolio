@@ -3,5 +3,8 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: ['cdn.discordapp.com']
+  },
+  typescript: {
+    ignoreBuildErrors: true
   }
 }

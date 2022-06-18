@@ -2,7 +2,7 @@ import Image from "next/image";
 import Img from "./Img";
 import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
-import { NextPage } from "next";
+import { NextComponentType, NextPage, NextPageContext } from "next";
 
 const Avatar: NextPage = () => {
     const { loading, status } = useLanyard({
