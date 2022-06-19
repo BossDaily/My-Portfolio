@@ -34,7 +34,7 @@ const Avatar: NextPage = () => {
     } else if (loading === false && status?.discord_status === "dnd") {
         return (
             <div className="relative overflow-visible">
-                <Tooltip>
+                <Tooltip  style="dark" placement="bottom" trigger="hover" animation="duration-500">
                     <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(237, 66, 69)" />
                 </Tooltip>
             </div>
