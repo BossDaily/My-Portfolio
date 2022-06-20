@@ -9,7 +9,6 @@ const Home: NextPage = () => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
-        <h1>I am BossDaily</h1>
         <Avatar />
       </section>
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
