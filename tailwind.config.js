@@ -11,6 +11,9 @@ module.exports = {
         waves: 'https://raw.githubusercontent.com/BossDaily/My-Portfolio/main/public/stats_bottom_wave1.svg'
       },
     },
+    fontFamily: {
+      'header': ['Helvetica', 'Arial', 'sans-serif'],
+    }
   },
   plugins: [require('flowbite/plugin')],
 }
