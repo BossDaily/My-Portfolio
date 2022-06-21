@@ -4,12 +4,16 @@ import Image from 'next/image'
 import BottomVectorWaves from '../components/Waves/BottomVectorWaves'
 import TopVectorWaves from '../components/Waves/TopVectorWaves'
 import Avatar from '../components/Avatar/Avatar'
+import HeroContainer from '../components/Hero/HeroContainer'
 
 const Home: NextPage = () => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
-        <Avatar />
+        <HeroContainer>
+          <Avatar />
+          <Avatar />
+        </HeroContainer>
       </section>
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
