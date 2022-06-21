@@ -5,13 +5,18 @@ import BottomVectorWaves from '../components/Waves/BottomVectorWaves'
 import TopVectorWaves from '../components/Waves/TopVectorWaves'
 import Avatar from '../components/Avatar/Avatar'
 import HeroContainer from '../components/Hero/HeroContainer'
+import TypewriterComponent from 'typewriter-effect'
 
 const Home: NextPage = () => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
         <HeroContainer>
-          <Avatar />
+          <TypewriterComponent
+            options={{
+              loop={true}
+            }}
+          />
           <Avatar />
         </HeroContainer>
       </section>
