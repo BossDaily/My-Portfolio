@@ -6,7 +6,7 @@ type Props = {
 }
 const HeroContainer: NextPage<Props> = ({ children }) => {
     return (
-        <div>
+        <div className="flex flex-col gap-8 sm:flex-row">
             {children}
         </div>
     );
