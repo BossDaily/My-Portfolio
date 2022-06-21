@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <HeroContainer>
           <TypewriterComponent
             options={{
-              strings: ['Fart', 'Gaming', 'Peeing'],
+              strings: ['Hello Im BossDaily 👋'],
               autoStart: true,
               loop: true
             }}
