@@ -26,6 +26,7 @@ const Img: NextPage<Props> = (props) => {
             height={1024}
             width={1024}
             loader={loaderProp}
+            
             />
         </div>
     );
