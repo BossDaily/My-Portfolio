@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           </div>
             <TypewriterComponent
               options={{
-                strings: ['Discord Bot Dev', 'Web Developer', 'Aspiring App Developer', 'Open Source Enthusiast'],
+                strings: ['Discord Bot Dev', 'Web Developer', 'Aspiring App Developer', 'Open Source Enthusiast', 'Minecraft server owner', 'Sigma Male'],
                 autoStart: true,
                 loop: true
                 

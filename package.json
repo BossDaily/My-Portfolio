@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "flowbite": "^1.4.7",
     "flowbite-react": "^0.0.26",
     "framer-motion": "^6.3.11",
