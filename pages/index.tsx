@@ -12,14 +12,15 @@ const Home: NextPage = () => {
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
         <HeroContainer>
+          <h1>Hello Im BossDaily 👋</h1>
+          <Avatar />
           <TypewriterComponent
             options={{
-              strings: ['Hello Im BossDaily 👋'],
+              strings: ['Discord Bot Dev', 'Web Developer', 'Aspiring App Developer', 'Open Source Enthusiast'],
               autoStart: true,
               loop: true
             }}
           />
-          <Avatar />
         </HeroContainer>
       </section>
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
