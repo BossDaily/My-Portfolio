@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <section className="bg-[#C77DFF]">
         <StatsContainer>
           <li className="p-8">
-            <p className="text-2xl font-extrabold text-teal-500">50</p>
+            <p className="text-2xl font-header">50</p>
             <p className="mt-1 text-lg font-medium">Websites</p>
           </li>
         </StatsContainer>
