@@ -6,6 +6,7 @@ import TopVectorWaves from '../components/Waves/TopVectorWaves'
 import Avatar from '../components/Avatar/Avatar'
 import HeroContainer from '../components/Hero/HeroContainer'
 import TypewriterComponent from 'typewriter-effect'
+import StatsContainer from '../components/Stats/StatsContainer'
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +29,9 @@ const Home: NextPage = () => {
       </section>
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
-        <p>I am BossDaily, one of the greatest programmers to ever touch a computer. I program using pen and paper, I remember and then manually switch transistors. Compiliers? Languages? Only losers use those. I can make any program I can think of within 2 hours, I've made fully custom everything because I am afraid the government has a backdoor in everything. I live in a van and I travel america living off of fastfood, willpower, and github sponsorships.</p>
+        <StatsContainer>
+          Among us
+        </StatsContainer>
       </section>
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
       <section >
