@@ -1,7 +1,10 @@
+import StatsItem from "./StatsItem";
+
+
 const Stats = () => {
     return (
         <div>
-            Enter
+            <StatsItem stat="faf" icon='apple' />
         </div>
     );
 }
