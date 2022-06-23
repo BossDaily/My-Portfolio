@@ -11,7 +11,7 @@ const StatsItem: NextPage<Props> = ({ icon, stat }) => {
     return (
         <div>
             <li className="p-8">
-                <Image src={icon} layout='fill' />
+                <Image src={icon} height={100} width={100} className="invert" />
                 <p className="mt-1 text-10xl font-medium">{stat}</p>
             </li>
         </div>
