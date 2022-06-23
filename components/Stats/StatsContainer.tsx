@@ -6,8 +6,10 @@ type Props = {
 }
 const StatsContainer: NextPage<Props> = ({ children }) => {
     return (
-        <div className="bg-Windsor p-8 rounded-xl m-10">
-            {children}
+        <div className="bg-Windsor max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+            <ul class="grid grid-cols-2 gap-4 rounded-xl lg:grid-cols-4">
+                {children}
+            </ul> 
         </div>
     );
 }
