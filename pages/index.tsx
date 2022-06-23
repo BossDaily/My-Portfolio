@@ -30,7 +30,10 @@ const Home: NextPage = () => {
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
         <StatsContainer>
-          Among us
+          <li className="p-8">
+            <p className="text-2xl font-extrabold text-teal-500">50</p>
+            <p className="mt-1 text-lg font-medium">Websites</p>
+          </li>
         </StatsContainer>
       </section>
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
