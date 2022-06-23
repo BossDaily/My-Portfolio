@@ -5,7 +5,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 const Stats = () => {
     return (
         <div>
-            <StatsItem stat="faffdhsjfksdahjfks" icon='coffee' />
+            <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
         </div>
     );
 }
