@@ -7,6 +7,7 @@ import Avatar from '../components/Avatar/Avatar'
 import HeroContainer from '../components/Hero/HeroContainer'
 import TypewriterComponent from 'typewriter-effect'
 import StatsContainer from '../components/Stats/StatsContainer'
+import Stats from '../components/Stats/Stats'
 
 const Home: NextPage = () => {
   return (
@@ -30,10 +31,7 @@ const Home: NextPage = () => {
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
         <StatsContainer>
-          <li className="p-8">
-            <p className="text-2xl font-header">50</p>
-            <p className="mt-1 text-lg font-medium">Websites</p>
-          </li>
+          <Stats/>
         </StatsContainer>
       </section>
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
