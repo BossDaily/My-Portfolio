@@ -6,7 +6,7 @@ type Props = {
 }
 const StatsContainer: NextPage<Props> = ({ children }) => {
     return (
-        <div className="bg-Windsor rounded-sm">
+        <div className="bg-Windsor rounded-sm p-8">
             {children}
         </div>
     );
