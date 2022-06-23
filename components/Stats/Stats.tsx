@@ -1,10 +1,10 @@
 import StatsItem from "./StatsItem";
-
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 const Stats = () => {
     return (
         <div>
-            <StatsItem stat="faf" icon='apple' />
+            <StatsItem stat="faffdhsjfksdahjfks" icon='coffee' />
         </div>
     );
 }
