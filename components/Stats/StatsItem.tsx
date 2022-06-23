@@ -2,12 +2,12 @@ import { NextPage } from "next";
 import { ReactNode } from "react";
 
 type Props = {
-    
+    children: ReactNode
 }
-const StatsItem = () => {
+const StatsItem: NextPage<Props> = ({ children }) => {
     return (
         <div>
-            Enter
+            {children}
         </div>
     );
 }
