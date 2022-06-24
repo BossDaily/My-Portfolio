@@ -8,7 +8,7 @@ const Stats = () => {
         <div>
             <StatsContainer>
                 <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
-                <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
+                <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'/>
                 <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
             </StatsContainer>
         </div>
