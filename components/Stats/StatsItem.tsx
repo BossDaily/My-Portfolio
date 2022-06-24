@@ -9,11 +9,9 @@ type Props = {
 }
 const StatsItem: NextPage<Props> = ({ icon, stat }) => {
     return (
-        <div>
-            <div className="p-8">
-                <Image src={icon} height={100} width={100} className="brightness-0 invert" />
-                <p className="mt-1 text-10xl font-medium">{stat}</p>
-            </div>
+        <div className="p-8">
+            <Image src={icon} height={100} width={100} className="brightness-0 invert" />
+            <p className="mt-1 text-20xl font-medium">{stat}</p>
         </div>
     );
 }
