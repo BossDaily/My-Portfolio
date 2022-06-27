@@ -1,6 +1,19 @@
 import StatsItem from "./StatsItem";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import StatsContainer from "./StatsContainer";
+import { GetServerSideProps } from 'next';
+
+
+export const getServerSideProps:GetServerSideProps = async (ctx) => {
+
+
+    return {
+        props:{
+            data:null
+        }
+    }
+}
+
 
 
 const Stats = () => {
