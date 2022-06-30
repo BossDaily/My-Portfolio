@@ -5,7 +5,11 @@ import { GetServerSideProps } from 'next';
 
 
 export const getServerSideProps:GetServerSideProps = async (ctx) => {
-    
+
+    const options = {
+        'content-type': 'application/json',
+        Authorization: `Basic ${process.env.WAKATIME}`
+    }
     const req = await fetch('https://wakatime.com/api/v1/users/current/all_time_since_today')
 
     return {
