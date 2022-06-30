@@ -10,7 +10,7 @@ export const getServerSideProps:GetServerSideProps = async (ctx) => {
         'content-type': 'application/json',
         Authorization: `Basic ${process.env.WAKATIME}`
     }
-    const req = await fetch('https://wakatime.com/api/v1/users/current/all_time_since_today')
+    const req = await fetch('https://wakatime.com/api/v1/users/current/all_time_since_today', options)
 
     return {
         props:{
