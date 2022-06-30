@@ -9,8 +9,8 @@ import { GetServerSideProps, NextPage } from 'next';
 
 
 
-const Stats:NextPage<{ jsonreq:string }> = (props) => {
-    console.log(props.jsonreq)
+const Stats:NextPage = () => {
+    
     return (
         <StatsContainer>
             <StatsItem stat={`faffdhsjfksdahjfks ${props.jsonreq}`} icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
