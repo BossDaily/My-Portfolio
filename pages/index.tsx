@@ -1,4 +1,4 @@
-import type { NextComponentType, NextPage } from 'next'
+import type { NextComponentType, NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import BottomVectorWaves from '../components/Waves/BottomVectorWaves'
@@ -7,7 +7,7 @@ import Avatar from '../components/Avatar/Avatar'
 import HeroContainer from '../components/Hero/HeroContainer'
 import TypewriterComponent from 'typewriter-effect'
 import StatsContainer from '../components/Stats/StatsContainer'
-import Stats from '../components/Stats/Stats'
+
 
 const Home: NextPage = () => {
   return (
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
         <div className="items-center" >
-          <Stats/>
+          
         </div>
       </section>
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
@@ -56,6 +56,23 @@ const Home: NextPage = () => {
       </section>
     </div>
   )
+}
+
+export const getServerSideProps:GetServerSideProps = async () => {
+
+    
+  const waka = await fetch('https://wakatime.com/api/v1/users/current/all_time_since_today', {
+      method: 'GET',
+      headers: {'content-type': 'application/json', 'Authorization': `Basic ${process.env.WAKATIME}` }
+  })
+  const jsonreq = await waka.json()
+  
+  console.log(jsonreq)
+  return {
+      props:{
+          jsonreq
+      }
+  }
 }
 
 
