@@ -1,4 +1,4 @@
-import type { NextComponentType, NextPage, GetServerSideProps } from 'next'
+import type { NextComponentType, NextPage, GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import BottomVectorWaves from '../components/Waves/BottomVectorWaves'
@@ -7,9 +7,10 @@ import Avatar from '../components/Avatar/Avatar'
 import HeroContainer from '../components/Hero/HeroContainer'
 import TypewriterComponent from 'typewriter-effect'
 import StatsContainer from '../components/Stats/StatsContainer'
+import StatsItem from '../components/Stats/StatsItem'
 
 
-const Home: NextPage = () => {
+const Home: NextPage = ({jsonreq}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
@@ -31,7 +32,9 @@ const Home: NextPage = () => {
       <TopVectorWaves url={'hero_layered_waves1.svg'} />
       <section className="bg-[#C77DFF]">
         <div className="items-center" >
-          
+          <StatsContainer>
+            <StatsItem stat={`${jsonreq.data.text}`} icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+          </StatsContainer>
         </div>
       </section>
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
