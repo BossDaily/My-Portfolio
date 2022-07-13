@@ -72,6 +72,11 @@ export const getServerSideProps:GetServerSideProps = async () => {
   })
   const codeTime = await waka.json()
   
+  const github = await client.query({
+    query: gpl`
+    
+    `
+  })
   
   return {
       props:{
