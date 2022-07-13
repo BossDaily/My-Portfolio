@@ -89,7 +89,8 @@ export const getServerSideProps:GetServerSideProps = async () => {
   
   return {
       props:{
-          codeTime
+          codeTime,
+          github
       }
   }
 }
