@@ -8,6 +8,8 @@ import HeroContainer from '../components/Hero/HeroContainer'
 import TypewriterComponent from 'typewriter-effect'
 import StatsContainer from '../components/Stats/StatsContainer'
 import StatsItem from '../components/Stats/StatsItem'
+import { gql } from '@apollo/client'
+import client from '../apollo-client'
 
 
 const Home: NextPage = ({codeTime}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
