@@ -12,7 +12,7 @@ import { gql } from '@apollo/client'
 import client from '../apollo-client'
 
 
-const Home: NextPage = ({codeTime}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
@@ -35,6 +35,9 @@ const Home: NextPage = ({codeTime}: InferGetServerSidePropsType<typeof getServer
       <section className="bg-[#C77DFF]">
         <div className="items-center" >
           <StatsContainer>
+            <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
+            <StatsItem stat="faffdhsjfksdahjfks" icon='https://site-assets.fontawesome.com/releases/v6.1.1/svgs/solid/display-code.svg'/>
+            <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'/>
             <StatsItem stat={`${codeTime.data.text}`} icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
           </StatsContainer>
         </div>
@@ -84,7 +87,11 @@ export const getServerSideProps:GetServerSideProps = async () => {
           }
         }
       }
-    `
+    `,
+    variables: {
+      "login": "BossDaily",
+      "includeUserRepositories": true
+    }
   })
   
   return {
