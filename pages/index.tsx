@@ -73,8 +73,17 @@ export const getServerSideProps:GetServerSideProps = async () => {
   const codeTime = await waka.json()
   
   const github = await client.query({
-    query: gpl`
-    
+    query: gql`
+      query($login: String!, $includeUserRepositories: Boolean) {
+        user(login: $login) {
+          repositoriesContributedTo(includeUserRepositories: $includeUserRepositories) {
+            totalCount
+          }
+          contributionsCollection {
+            totalCommitContributions
+          }
+        }
+      }
     `
   })
   
