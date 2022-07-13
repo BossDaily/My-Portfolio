@@ -10,7 +10,7 @@ import StatsContainer from '../components/Stats/StatsContainer'
 import StatsItem from '../components/Stats/StatsItem'
 
 
-const Home: NextPage = ({jsonreq}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const Home: NextPage = ({codeTime}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <section>
@@ -33,7 +33,7 @@ const Home: NextPage = ({jsonreq}: InferGetServerSidePropsType<typeof getServerS
       <section className="bg-[#C77DFF]">
         <div className="items-center" >
           <StatsContainer>
-            <StatsItem stat={`${jsonreq.data.text}`} icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+            <StatsItem stat={`${codeTime.data.text}`} icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
           </StatsContainer>
         </div>
       </section>
@@ -68,12 +68,12 @@ export const getServerSideProps:GetServerSideProps = async () => {
       method: 'GET',
       headers: {'content-type': 'application/json', 'Authorization': `Basic ${process.env.WAKATIME}` }
   })
-  const jsonreq = await waka.json()
+  const codeTime = await waka.json()
   
-  console.log(jsonreq)
+  
   return {
       props:{
-          jsonreq
+          codeTime
       }
   }
 }
