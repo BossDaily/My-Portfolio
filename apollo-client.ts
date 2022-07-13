@@ -5,3 +5,5 @@ const client = new  ApolloClient({
     cache: new InMemoryCache(),
     headers: {'Authorization': `bearer ${process.env.GITHUB_TOKEN}`}
 })
+
+export default client
