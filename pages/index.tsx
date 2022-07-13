@@ -35,9 +35,9 @@ const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof g
       <section className="bg-[#C77DFF]">
         <div className="items-center" >
           <StatsContainer>
-            <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
+            <StatsItem stat={`${github.data.user.repositoriesContributedTo.totalCount} Projects`} icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'/>
             <StatsItem stat={`${codeTime.data.text} programmed`} icon='https://site-assets.fontawesome.com/releases/v6.1.1/svgs/solid/display-code.svg'/>
-            <StatsItem stat="faffdhsjfksdahjfks" icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'/>
+            <StatsItem stat={`${github.data.user.contributionsCollection.totalCommitContributions} Contributions`} icon='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'/>
           </StatsContainer>
         </div>
       </section>
