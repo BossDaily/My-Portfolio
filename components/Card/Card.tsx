@@ -1,9 +1,16 @@
 import { Button } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
+import { ReactNode } from "react";
 
-type Props = {};
+type Props = {
+  children: ReactNode
+  title: string
+  link: string
+  thumbnail: string
+  btnName: string
+};
 
-const Card: NextPage<Props> = (props) => {
+const Card: NextPage<Props> = ({ children, title, link, thumbnail, btnName }) => {
   return (
     <div className="bg-Windsor rounded-xl max-w-sm shadow-md">
       <a href="#">
@@ -24,7 +31,6 @@ const Card: NextPage<Props> = (props) => {
           with a shopping district, and similar features to the iconic
           hermitcraft server.
         </p>
-        <Button color="purple">Blog</Button>
         <a href="#">
           <Button color="purple">Blog</Button>
         </a>
