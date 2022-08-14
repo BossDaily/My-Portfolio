@@ -1,8 +1,13 @@
 import { NextComponentType, NextPage } from "next";
 
-const Card = () => {
+type Props = {
+  
+}
+
+
+const Card: NextPage<Props> = (props) => {
   return (
-    <div>
+    <div className="bg-Medium-Purple rounded-xl">
       Enter
     </div>
   );
