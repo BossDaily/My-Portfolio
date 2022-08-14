@@ -8,7 +8,7 @@ type Props = {
 const CardContainer: NextPage<Props> = ({children}) => {
   return (
     <div>
-      Enter
+      {children}
     </div>
   );
 }
