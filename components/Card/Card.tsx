@@ -7,7 +7,7 @@ type Props = {
 
 const Card: NextPage<Props> = (props) => {
   return (
-    <div className="bg-Medium-Purple rounded-xl">
+    <div className="bg-Windsor rounded-xl max-w-sm shadow-md">
       Enter
     </div>
   );
