@@ -12,6 +12,7 @@ import { gql } from '@apollo/client'
 import client from '../apollo-client'
 import Title from '../components/Title'
 import Card from '../components/Card/Card'
+import CardContainer from '../components/Card/CardContainer'
 
 
 const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -46,7 +47,11 @@ const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof g
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
       <section >
         <Title>Projects</Title>
-        <Card />
+        <CardContainer>
+          <Card />
+          <Card />
+          <Card />
+        </CardContainer>
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
