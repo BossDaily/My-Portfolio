@@ -11,6 +11,7 @@ import StatsItem from '../components/Stats/StatsItem'
 import { gql } from '@apollo/client'
 import client from '../apollo-client'
 import Title from '../components/Title'
+import Card from '../components/Card/Card'
 
 
 const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -45,7 +46,7 @@ const Home: NextPage = ({codeTime, github}: InferGetServerSidePropsType<typeof g
       <BottomVectorWaves url={'stats_bottom_wave2.svg'} />
       <section >
         <Title>Projects</Title>
-        <p>I am BossDaily, one of the greatest programmers to ever touch a computer. I program using pen and paper, I remember and then manually switch transistors. Compiliers? Languages? Only losers use those. I can make any program I can think of within 2 hours, I've made fully custom everything because I am afraid the government has a backdoor in everything. I live in a van and I travel america living off of fastfood, willpower, and github sponsorships.</p>
+        <Card />
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
