@@ -109,18 +109,6 @@ const Home: NextPage = ({
             players. This bot will use the framework for Discord bots that I
             built for analog meaning it supports modern Discord API features.
           </Card>
-          <Card
-            btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot"
-            title="Observer-Bot"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-          >
-            Observer Bot is a Discord bot I built for my Minecraft server in
-            Discord.js. This bot mainly queries stats from a Minecraft server
-            with ServerTAP installed and shows them in a Discord embed. I made
-            this because a lot of other solutions to do this sucked so I thought
-            I would make one myself.
-          </Card>
         </CardContainer>
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
