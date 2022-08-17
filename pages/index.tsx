@@ -146,6 +146,7 @@ const Home: NextPage = ({
         <h1>I am BossDaily</h1>
         <p>
           Made by BossDaily with Typescript, NextJS, Apollo GraphQL, TailwindCSS, Figma, and ❤️
+          If you want me to work for you, contact me at gboys2008@gmail.com or BossDaily#6016 on Discord
         </p>
       </section>
     </div>
