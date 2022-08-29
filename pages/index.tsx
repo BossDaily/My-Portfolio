@@ -117,15 +117,11 @@ const Home: NextPage = ({
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
         <Title>My Development Progress</Title>
-        <p>
-          I am BossDaily, one of the greatest programmers to ever touch a
-          computer. I program using pen and paper, I remember and then manually
-          switch transistors. Compiliers? Languages? Only losers use those. I
-          can make any program I can think of within 2 hours, I've made fully
-          custom everything because I am afraid the government has a backdoor in
-          everything. I live in a van and I travel america living off of
-          fastfood, willpower, and github sponsorships.
-        </p>
+        <Tabs.Group>
+            <Tabs.Item title="Ik">
+              ratio
+            </Tabs.Item>
+        </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
       {/*
