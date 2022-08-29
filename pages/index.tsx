@@ -18,6 +18,7 @@ import client from "../apollo-client";
 import Title from "../components/Title";
 import Card from "../components/Card/Card";
 import CardContainer from "../components/Card/CardContainer";
+import { Tabs } from "flowbite-react";
 
 const Home: NextPage = ({
   codeTime,
