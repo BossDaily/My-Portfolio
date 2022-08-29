@@ -80,7 +80,9 @@ const Home: NextPage = ({
             Discord.js. This bot mainly queries stats from a Minecraft server
             with ServerTAP installed and shows them in a Discord embed. I made
             this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. The bot also shows information about the Discord server it is on, and members in the Discord server. And soon it will be able to show stats about the Minecraft server.
+            I would make one myself. The bot also shows information about the
+            Discord server it is on, and members in the Discord server. And soon
+            it will be able to show stats about the Minecraft server.
           </Card>
           <Card
             btnName="Repo"
@@ -111,6 +113,20 @@ const Home: NextPage = ({
           </Card>
         </CardContainer>
       </section>
+      <TopVectorWaves url="bottom-wave4.svg" />
+      <section className="bg-[#C77DFF]">
+        <h1>I am BossDaily</h1>
+        <p>
+          I am BossDaily, one of the greatest programmers to ever touch a
+          computer. I program using pen and paper, I remember and then manually
+          switch transistors. Compiliers? Languages? Only losers use those. I
+          can make any program I can think of within 2 hours, I've made fully
+          custom everything because I am afraid the government has a backdoor in
+          everything. I live in a van and I travel america living off of
+          fastfood, willpower, and github sponsorships.
+        </p>
+      </section>
+      <BottomVectorWaves url="top-layered-waves4.svg" />
       {/*
         <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
@@ -138,15 +154,15 @@ const Home: NextPage = ({
           fastfood, willpower, and github sponsorships.
         </p>
       </section>
-      */
-      }
-      
+      */}
+
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
         <h1>I am BossDaily</h1>
         <p>
-          Made by BossDaily with Typescript, NextJS, Apollo GraphQL, TailwindCSS, Figma, and ❤️
-          If you want me to work for you, contact me at gboys2008@gmail.com or BossDaily#6016 on Discord
+          Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
+          TailwindCSS, Figma, and ❤️ If you want me to work for you, contact me
+          at gboys2008@gmail.com or BossDaily#6016 on Discord
         </p>
       </section>
     </div>
