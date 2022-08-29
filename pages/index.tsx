@@ -115,7 +115,7 @@ const Home: NextPage = ({
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
-        <h1>I am BossDaily</h1>
+        <Title>My Development Process</Title>
         <p>
           I am BossDaily, one of the greatest programmers to ever touch a
           computer. I program using pen and paper, I remember and then manually
