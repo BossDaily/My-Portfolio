@@ -18,6 +18,7 @@ import client from "../apollo-client";
 import Title from "../components/Title";
 import Card from "../components/Card/Card";
 import CardContainer from "../components/Card/CardContainer";
+import { Tabs } from "flowbite-react";
 
 const Home: NextPage = ({
   codeTime,
@@ -80,7 +81,9 @@ const Home: NextPage = ({
             Discord.js. This bot mainly queries stats from a Minecraft server
             with ServerTAP installed and shows them in a Discord embed. I made
             this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. The bot also shows information about the Discord server it is on, and members in the Discord server. And soon it will be able to show stats about the Minecraft server.
+            I would make one myself. The bot also shows information about the
+            Discord server it is on, and members in the Discord server. And soon
+            it will be able to show stats about the Minecraft server.
           </Card>
           <Card
             btnName="Repo"
@@ -111,6 +114,14 @@ const Home: NextPage = ({
           </Card>
         </CardContainer>
       </section>
+      <TopVectorWaves url="bottom-wave4.svg" />
+      <section className="bg-[#C77DFF]">
+        <Title>My Development Progress</Title>
+        <Tabs.Group style="underline">
+          <Tabs.Item title="Ik">ratio</Tabs.Item>
+        </Tabs.Group>
+      </section>
+      <BottomVectorWaves url="top-layered-waves4.svg" />
       {/*
         <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
@@ -138,14 +149,15 @@ const Home: NextPage = ({
           fastfood, willpower, and github sponsorships.
         </p>
       </section>
-      */
-      }
-      
+      */}
+
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
         <h1>I am BossDaily</h1>
         <p>
-          Made by BossDaily with Typescript, NextJS, Apollo GraphQL, TailwindCSS, Figma, and ❤️
+          Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
+          TailwindCSS, Figma, and ❤️ If you want me to work for you, contact me
+          at gboys2008@gmail.com or BossDaily#6016 on Discord
         </p>
       </section>
     </div>
