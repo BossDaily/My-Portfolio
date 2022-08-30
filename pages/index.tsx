@@ -117,11 +117,11 @@ const Home: NextPage = ({
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
         <Title>My Development Progress</Title>
-        <Tabs.Group color="#C77DFF" style="pills">
+        <Tabs.Group color="purple" style="pills">
           <Tabs.Item title="What I know">Javascript</Tabs.Item>
-          <Tabs.Item title="What I am learning">Javascript</Tabs.Item>
-          <Tabs.Item title="What I want to learn">Javascript</Tabs.Item>
-          <Tabs.Item title="Productivity Tools">Javascript</Tabs.Item>
+          <Tabs.Item title="What I am learning">Next.JS React</Tabs.Item>
+          <Tabs.Item title="What I want to learn">Kotlin Rust C++</Tabs.Item>
+          <Tabs.Item title="Productivity Tools">Linux VSCode</Tabs.Item>
         </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
