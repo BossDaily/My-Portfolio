@@ -165,7 +165,9 @@ const Home: NextPage = ({
         theme={{
           theme:{
             tabs: {
-              
+              styles: {
+                pills:'flex-wrap text-sm font-helvetica text-white dark:text-gray-400'
+              }
             }
           }
         }}
