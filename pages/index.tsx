@@ -18,7 +18,11 @@ import client from "../apollo-client";
 import Title from "../components/Title";
 import Card from "../components/Card/Card";
 import CardContainer from "../components/Card/CardContainer";
+<<<<<<< HEAD
 import { Tabs, Flowbite } from "flowbite-react";
+=======
+import { Tabs, TabStyle, TabsProps } from "flowbite-react";
+>>>>>>> d3df16ff697f5515e307b4dec96e7f9dc40fd0b1
 
 const Home: NextPage = ({
   codeTime,
@@ -117,9 +121,17 @@ const Home: NextPage = ({
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
         <Title>My Development Progress</Title>
+<<<<<<< HEAD
         <Tabs.Group style="underline" color="purple">
           <Tabs.Item title="Ik">ratio</Tabs.Item>
           <Tabs.Item title="etewa">eawhahwehwa</Tabs.Item>
+=======
+        <Tabs.Group color="purple" style="pills">
+          <Tabs.Item title="What I know">Javascript</Tabs.Item>
+          <Tabs.Item title="What I am learning">Next.JS React</Tabs.Item>
+          <Tabs.Item title="What I want to learn">Kotlin Rust C++</Tabs.Item>
+          <Tabs.Item title="Productivity Tools">Linux VSCode</Tabs.Item>
+>>>>>>> d3df16ff697f5515e307b4dec96e7f9dc40fd0b1
         </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
