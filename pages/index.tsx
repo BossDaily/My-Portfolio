@@ -118,7 +118,7 @@ const Home: NextPage = ({
       <section className="bg-[#C77DFF]">
         <Title>My Development Progress</Title>
         <Tabs.Group style="pills">
-          <Tabs.Item title="Ik">ratio</Tabs.Item>
+          <Tabs.Item title="Ik" active={true}>ratio</Tabs.Item>
           <Tabs.Item title="etewa">eawhahwehwa</Tabs.Item>
         </Tabs.Group>
       </section>
