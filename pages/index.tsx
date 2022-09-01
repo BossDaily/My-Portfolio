@@ -29,10 +29,12 @@ const Home: NextPage = ({
       <Flowbite
         theme={{
           theme: {
-            tabs: {
-              styles: {
-                pills:
-                  "flex-wrap text-sm font-helvetica text-white dark:text-gray-400",
+            tab: {
+              tablist: {
+                styles: {
+                  pills:
+                    "flex-wrap text-sm font-helvetica text-white dark:text-gray-400",
+                },
               },
             },
           },
@@ -130,7 +132,7 @@ const Home: NextPage = ({
         <TopVectorWaves url="bottom-wave4.svg" />
         <section className="bg-[#C77DFF]">
           <Title>My Development Progress</Title>
-          <Tabs.Group style="underline" color="purple">
+          <Tabs.Group style="pills">
             <Tabs.Item title="Ik">ratio</Tabs.Item>
             <Tabs.Item title="etewa">eawhahwehwa</Tabs.Item>
           </Tabs.Group>
