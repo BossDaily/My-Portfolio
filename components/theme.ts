@@ -4,15 +4,15 @@ export const customtheme: CustomFlowbiteTheme = {
   tab: {
     tablist: {
       styles: {
-        pills: "flex-wrap text-sm font-helvetica text-white dark:text-gray-400",
+        pills: "flex-wrap text-sm font-helvetica text-white dark:text-gray-400 gap-x-6",
       },
       tabitem: {
         styles: {
           pills: {
             base: "",
             active: {
-              on: "rounded-lg bg-[#B469EF] font-helvetica text-white",
-              off: "rounded-lg hover:text-BlackRussian hover:bg-BlackRussian dark:hover:bg-BlackRussian dark:hover:text-white",
+              on: "rounded-lg bg-Purple-Heart font-helvetica text-white",
+              off: "rounded-full bg-Purple-Heart hover:text-white hover:bg-MediumPurple dark:hover:bg-BlackRussian dark:hover:text-white",
             },
           },
         }, 
