@@ -12,7 +12,7 @@ export const customtheme: CustomFlowbiteTheme = {
             base: "",
             active: {
               on: "rounded-lg bg-[#B469EF] font-helvetica text-white",
-              off: "rounded-lg hover:text-BlackRussian hover:bg-gray-100 dark:hover:bg-BlackRussian dark:hover:text-white",
+              off: "rounded-lg hover:text-BlackRussian hover:bg-BlackRussian dark:hover:bg-BlackRussian dark:hover:text-white",
             },
           },
         }, 
