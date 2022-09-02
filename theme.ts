@@ -11,9 +11,8 @@ export const customtheme: CustomFlowbiteTheme = {
           pills: {
             base: "",
             active: {
-              
               on: "rounded-lg bg-[#B469EF] font-helvetica text-white",
-              off: "rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white",
+              off: "rounded-lg hover:text-BlackRussian hover:bg-gray-100 dark:hover:bg-BlackRussian dark:hover:text-white",
             },
           },
         }, 
