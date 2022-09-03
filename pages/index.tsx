@@ -112,6 +112,7 @@ const Home: NextPage = ({
             players. This bot will use the framework for Discord bots that I
             built for analog meaning it supports modern Discord API features.
           </Card>
+          
         </CardContainer>
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
