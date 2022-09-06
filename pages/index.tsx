@@ -118,12 +118,7 @@ const Home: NextPage = ({
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
         <Title>My Development Progress</Title>
-        <Tabs.Group style="pills">
-          <Tabs.Item title="What I know" active={true}>ratio</Tabs.Item>
-          <Tabs.Item title="What I am Learning">eawhahwehwa</Tabs.Item>
-          <Tabs.Item title="What I want to Learn">eawhahwehwa</Tabs.Item>
-          <Tabs.Item title="Productivity Tools">eawhahwehwa</Tabs.Item>
-        </Tabs.Group>
+        
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
       {/*
