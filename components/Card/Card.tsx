@@ -12,7 +12,7 @@ type Props = {
 
 const Card: NextPage<Props> = ({ children, title, link, thumbnail, btnName }) => {
   return (
-    <div className="bg-Windsor rounded-xl shadow-md m-5 lg:max-w-sm max-h-sm sm:w-auto">
+    <div className="bg-Windsor w-80 rounded-xl shadow-md m-5 lg:max-w-sm max-h-sm sm:w-auto flex flex-col">
       <a href={link}>
         <img
           src={thumbnail}
