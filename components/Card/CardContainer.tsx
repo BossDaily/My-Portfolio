@@ -7,7 +7,7 @@ type Props = {
 
 const CardContainer: NextPage<Props> = ({ children }) => {
   return (
-    <div className=" p-10 mx-auto sm:px-6 lg:px-8 rounded-xl grid sm:flex-none sm:grid-cols-1 md:overflow-x-auto lg:grid-cols-3 xl:grid-cols-3 gap-8">
+    <div className="mx-auto snap-x snap-proximity sm:px-6 sm:pb-0 pt-4 pb-2 rounded-xl flex sm:flex-none sm:grid flex-cols sm:grid-cols-8 sm:overflow-x-auto md:grid-cols-3 gap-2 md:pt-12">
       {children}
     </div>
   );
