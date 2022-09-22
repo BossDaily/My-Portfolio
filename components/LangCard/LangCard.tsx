@@ -8,8 +8,8 @@ type Props = {
 
 const LangCard: NextPage<Props> = ({lang, icon}) => {
   return (
-    <div>
-      
+    <div className="h-10 flex gap-2 flex-row w-40 bg-Purple-Heart">
+
     </div>
   )
 }
