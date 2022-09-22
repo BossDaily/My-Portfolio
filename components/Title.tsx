@@ -11,7 +11,7 @@ type Props = {
 const Title: NextPage<Props> = ({ children }) => {
     
     return (
-        <div className="font-helvetica text-white text-6xl font-bold p-10">
+        <div className="font-helvetica text-white text-6xl font-bold px-4 pt-20 sm:pt-0">
           {children}
         </div>
     );
