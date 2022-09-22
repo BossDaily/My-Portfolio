@@ -19,6 +19,8 @@ import Title from "../components/Title";
 import Card from "../components/Card/Card";
 import CardContainer from "../components/Card/CardContainer";
 import { Tabs, Flowbite } from "flowbite-react";
+import LangCard from "../components/LangCard/LangCard";
+import LangCardContainer from "../components/LangCard/LangCardContainer";
 
 const Home: NextPage = ({
   codeTime,
@@ -112,25 +114,20 @@ const Home: NextPage = ({
             players. This bot will use the framework for Discord bots that I
             built for analog meaning it supports modern Discord API features.
           </Card>
-    
         </CardContainer>
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
         <Title>Tools I use</Title>
         <Tabs.Group style="pills">
-          <Tabs.Item title={'Frontend'}>
-
+          <Tabs.Item title={"Frontend"}>
+            <LangCardContainer>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+            </LangCardContainer>
           </Tabs.Item>
-          <Tabs.Item title={'Backend'}>
-
-          </Tabs.Item>
-          <Tabs.Item title={'Tools'}>
-
-          </Tabs.Item>
-          <Tabs.Item title={'Productivity'}>
-
-          </Tabs.Item>
+          <Tabs.Item title={"Backend"}></Tabs.Item>
+          <Tabs.Item title={"Tools"}></Tabs.Item>
+          <Tabs.Item title={"Productivity"}></Tabs.Item>
         </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
