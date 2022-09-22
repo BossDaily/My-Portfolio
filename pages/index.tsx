@@ -117,7 +117,7 @@ const Home: NextPage = ({
       </section>
       <TopVectorWaves url="bottom-wave4.svg" />
       <section className="bg-[#C77DFF]">
-        <Title>df</Title>
+        <Title>Tools I use</Title>
         
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
