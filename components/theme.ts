@@ -4,7 +4,7 @@ export const customtheme: CustomFlowbiteTheme = {
   tab: {
     tablist: {
       styles: {
-        pills: "flex-wrap text-sm font-helvetica text-white dark:text-gray-400 gap-x-6",
+        pills: "flex-wrap text-sm font-helvetica text-white dark:text-gray-400 gap-x-6 justify-center",
       },
       tabitem: {
         styles: {
