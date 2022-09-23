@@ -123,6 +123,11 @@ const Home: NextPage = ({
           <Tabs.Item title={"Frontend"}>
             <LangCardContainer>
               <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Backend"}></Tabs.Item>
