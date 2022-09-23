@@ -2,6 +2,7 @@ import { NextComponentType, NextPage } from "next";
 import Image from "next/image";
 import { ReactNode } from "react";
 import LangIcon from "./LangIcon";
+import LangText from "./LangText";
 
 type Props = {
   lang: string;
@@ -10,9 +11,11 @@ type Props = {
 
 const LangCard: NextPage<Props> = ({ lang, icon }) => {
   return (
-    <div className="h-20 flex gap-2 flex-row w-60 bg-Purple-Heart rounded-xl content-center">
+    <div className="h-20 flex gap-2 flex-row w-60 bg-Purple-Heart rounded-xl justify-center">
       <LangIcon icon={icon} />
-
+      <LangText>
+        Javascript
+      </LangText>
     </div>
   );
 };
