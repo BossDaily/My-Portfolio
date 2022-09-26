@@ -134,7 +134,7 @@ const Home: NextPage = ({
           </Tabs.Item>
           <Tabs.Item title={"Backend"}>
           <LangCardContainer>
-              <LangCard lang={'Node.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'Node.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}/>
               <LangCard lang={'Typescript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'}/>
               
               
