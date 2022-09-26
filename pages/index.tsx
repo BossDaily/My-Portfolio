@@ -127,7 +127,7 @@ const Home: NextPage = ({
               <LangCard lang={'HTML'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'}/>
               <LangCard lang={'CSS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'}/>
               <LangCard lang={'React'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'}/>
-              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'NextJS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Backend"}></Tabs.Item>
