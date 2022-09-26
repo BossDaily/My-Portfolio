@@ -122,21 +122,70 @@ const Home: NextPage = ({
         <Tabs.Group style="pills">
           <Tabs.Item title={"Frontend"}>
             <LangCardContainer>
-              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
-              <LangCard lang={'Typescript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'}/>
-              <LangCard lang={'HTML'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'}/>
-              <LangCard lang={'CSS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'}/>
-              <LangCard lang={'React'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'}/>
-              <LangCard lang={'NextJS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'}/>
-              <LangCard lang={'Tailwind'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'}/>
-              
+              <LangCard
+                lang={"React"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                }
+              />
+              <LangCard
+                lang={"NextJS"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                }
+              />
+              <LangCard
+                lang={"Tailwind"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                }
+              />
+              <LangCard
+                lang={"HTML"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                }
+              />
+              <LangCard
+                lang={"CSS"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                }
+              />
+              <LangCard
+                lang={"JavaScript"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                }
+              />
+              <LangCard
+                lang={"Typescript"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Backend"}>
-          <LangCardContainer>
-              <LangCard lang={'Node.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}/>
-              <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/>
-              <LangCard lang={'Prisma'} icon={'https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png'}/>
+            <LangCardContainer>
+              <LangCard
+                lang={"Node.JS"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                }
+              />
+              <LangCard
+                lang={"MySQL"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                }
+              />
+              <LangCard
+                lang={"Prisma"}
+                icon={
+                  "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Tools"}></Tabs.Item>
