@@ -128,6 +128,8 @@ const Home: NextPage = ({
               <LangCard lang={'CSS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'}/>
               <LangCard lang={'React'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'}/>
               <LangCard lang={'NextJS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'}/>
+              <LangCard lang={'Tailwind'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'}/>
+              
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Backend"}></Tabs.Item>
