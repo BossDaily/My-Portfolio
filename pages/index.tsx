@@ -136,6 +136,7 @@ const Home: NextPage = ({
           <LangCardContainer>
               <LangCard lang={'Node.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}/>
               <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/>
+              <LangCard lang={'Prisma'} icon={'https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Tools"}></Tabs.Item>
