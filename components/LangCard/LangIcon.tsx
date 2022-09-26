@@ -8,7 +8,7 @@ type Props = {
 
 const LangIcon: NextPage<Props> = ({ icon }) => {
   return (
-    <div className="py-2 pl-1">
+    <div className="py-2 pl-2">
       <Image
         src={icon}
         className="rounded-2xl"
