@@ -186,11 +186,22 @@ const Home: NextPage = ({
                   "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
                 }
               />
-              <LangCard lang={'Discord.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg'}/>
+              <LangCard
+                lang={"Discord.JS"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
-          <Tabs.Item title={"Tools"}></Tabs.Item>
-          <Tabs.Item title={"Productivity"}></Tabs.Item>
+          <Tabs.Item title={"Tools"}>
+            <LangCardContainer>
+            <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/>
+            </LangCardContainer>
+          </Tabs.Item>
+          <Tabs.Item title={"Productivity"}>
+            <LangCardContainer> <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/> </LangCardContainer>
+          </Tabs.Item>
         </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
