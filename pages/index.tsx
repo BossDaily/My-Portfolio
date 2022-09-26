@@ -186,6 +186,7 @@ const Home: NextPage = ({
                   "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
                 }
               />
+              <LangCard lang={'Discord.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Tools"}></Tabs.Item>
