@@ -124,7 +124,7 @@ const Home: NextPage = ({
             <LangCardContainer>
               <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
               <LangCard lang={'Typescript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'}/>
-              <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'HTML'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'}/>
               <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
               <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
               <LangCard lang={'JavaScript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
