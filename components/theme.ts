@@ -4,18 +4,19 @@ export const customtheme: CustomFlowbiteTheme = {
   tab: {
     tablist: {
       styles: {
-        pills: "flex-wrap text-sm font-helvetica text-white dark:text-gray-400 gap-x-6 justify-center",
+        pills:
+          "flex-wrap text-sm font-helvetica text-white dark:text-gray-400 gap-x-6 gap-y-4 justify-center pt-4 ",
       },
       tabitem: {
         styles: {
           pills: {
             base: "",
             active: {
-              on: "rounded-lg bg-Purple-Heart font-helvetica text-white",
-              off: "rounded-full bg-Purple-Heart text-white font-helvetica hover:text-white hover:bg-MediumPurple",
+              on: "rounded-lg bg-Purple-Heart font-helvetica text-white  hover:-translate-y-1 hover:scale-110 ",
+              off: "rounded-full bg-Purple-Heart text-white font-helvetica hover:text-white hover:bg-MediumPurple hover:-translate-y-1 hover:scale-110",
             },
           },
-        }, 
+        },
       },
     },
   },
