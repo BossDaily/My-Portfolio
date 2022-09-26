@@ -132,7 +132,14 @@ const Home: NextPage = ({
               
             </LangCardContainer>
           </Tabs.Item>
-          <Tabs.Item title={"Backend"}></Tabs.Item>
+          <Tabs.Item title={"Backend"}>
+          <LangCardContainer>
+              <LangCard lang={'Node.JS'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'}/>
+              <LangCard lang={'Typescript'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'}/>
+              
+              
+            </LangCardContainer>
+          </Tabs.Item>
           <Tabs.Item title={"Tools"}></Tabs.Item>
           <Tabs.Item title={"Productivity"}></Tabs.Item>
         </Tabs.Group>
