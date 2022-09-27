@@ -208,17 +208,24 @@ const Home: NextPage = ({
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                 }
               />
+              <LangCard lang={'Linux'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
+              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'}/>
+              <LangCard lang={'Github'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'}/>
+              <LangCard lang={'IntelliJ'} icon={'https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Productivity"}>
             <LangCardContainer>
-              {" "}
+              
               <LangCard
                 lang={"MySQL"}
                 icon={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
                 }
-              />{" "}
+              />
+              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
+              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
+              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
         </Tabs.Group>
