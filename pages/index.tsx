@@ -218,9 +218,9 @@ const Home: NextPage = ({
             <LangCardContainer>
               
               <LangCard
-                lang={"MySQL"}
+                lang={"Trello"}
                 icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
                 }
               />
               <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
