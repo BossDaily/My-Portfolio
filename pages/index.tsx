@@ -196,11 +196,30 @@ const Home: NextPage = ({
           </Tabs.Item>
           <Tabs.Item title={"Tools"}>
             <LangCardContainer>
-            <LangCard lang={'Git'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'}/>
+              <LangCard
+                lang={"Git"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                }
+              />
+              <LangCard
+                lang={"VSCode"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Productivity"}>
-            <LangCardContainer> <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/> </LangCardContainer>
+            <LangCardContainer>
+              {" "}
+              <LangCard
+                lang={"MySQL"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                }
+              />{" "}
+            </LangCardContainer>
           </Tabs.Item>
         </Tabs.Group>
       </section>
