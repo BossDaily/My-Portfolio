@@ -196,7 +196,7 @@ const Home: NextPage = ({
           </Tabs.Item>
           <Tabs.Item title={"Tools"}>
             <LangCardContainer>
-            <LangCard lang={'MySQL'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}/>
+            <LangCard lang={'Git'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'}/>
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Productivity"}>
