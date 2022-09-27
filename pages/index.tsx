@@ -223,9 +223,8 @@ const Home: NextPage = ({
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
                 }
               />
-              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
-              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
-              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
+              <LangCard lang={'Notion'} icon={'https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png'}/>
+              
             </LangCardContainer>
           </Tabs.Item>
         </Tabs.Group>
