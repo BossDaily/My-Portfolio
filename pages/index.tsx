@@ -21,6 +21,7 @@ import CardContainer from "../components/Card/CardContainer";
 import { Tabs, Flowbite } from "flowbite-react";
 import LangCard from "../components/LangCard/LangCard";
 import LangCardContainer from "../components/LangCard/LangCardContainer";
+import ProfileCard from "../components/Profile/ProfileCard";
 
 const Home: NextPage = ({
   codeTime,
@@ -234,6 +235,7 @@ const Home: NextPage = ({
         <Title>
           What I'm upto
         </Title>
+        <ProfileCard/>
       </section>
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
