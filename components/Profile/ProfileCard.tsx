@@ -1,11 +1,11 @@
-import { GetServerSideProps, NextComponentType, NextPage } from "next";
+import { GetServerSideProps, InferGetServerSidePropsType, NextComponentType, NextPage } from "next";
 import Image from "next/image";
 import { ReactNode } from "react";
 import { useLanyard } from "react-use-lanyard/dist";
 
 import type { Activity } from "react-use-lanyard/dist";
 
-const ProfileCard: NextPage = () => {
+const ProfileCard: NextPage = ({discord}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { loading, status } = useLanyard({
     userId: "274973338676494347",
     socket: true,
