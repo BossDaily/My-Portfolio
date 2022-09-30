@@ -30,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     }
   );
   const discord = await discordQuery.json();
-
+  
   return {
     props: {
       discord,
