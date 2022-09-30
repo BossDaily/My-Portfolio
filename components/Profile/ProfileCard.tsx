@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       method: "GET",
       headers: {
         "content-type": "application/json",
-        Authorization: `Bearer ${process.env.DISCORD_SECRET}`,
+        Authorization: `Bot ${process.env.DISCORD_SECRET}`,
       },
     }
   );
