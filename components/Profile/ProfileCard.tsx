@@ -10,7 +10,7 @@ const ProfileCard: NextPage = ({discord}: InferGetServerSidePropsType<typeof get
     userId: "274973338676494347",
     socket: true,
   });
-
+  console.log(discord)
   return (
     <div className="w-80 h-full bg-Medium-Purple flex flex-col rounded-lg">
       <h1>fortnite</h1>
@@ -37,4 +37,5 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   };
 };
+
 export default ProfileCard;
