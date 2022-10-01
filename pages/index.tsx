@@ -26,6 +26,7 @@ import ProfileCard from "../components/Profile/ProfileCard";
 const Home: NextPage = ({
   codeTime,
   github,
+  discord,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
@@ -236,6 +237,7 @@ const Home: NextPage = ({
           What I'm upto
         </Title>
         <ProfileCard/>
+        
       </section>
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
@@ -284,10 +286,22 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   });
 
+  const discquery = await fetch(
+    "https://discord.com/api/users/274973338676494347",
+    {
+      method: "GET",
+      headers: {
+        Authorization: `Bot ${process.env.DISCORD_SECRET}`,
+      },
+    }
+  );
+  const discord = await discquery.json()
+
   return {
     props: {
       codeTime,
       github,
+      discord,
     },
   };
 };
