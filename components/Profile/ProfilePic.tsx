@@ -12,9 +12,9 @@ const ProfilePic: NextPage<Props> = (props) => {
     return `${src}?size=${width}`;
   }
   return (
-    <div className="relative">
+    <div className="relative p-2">
       <Image src={url} height={128} width={128} loader={loaderProp} className="rounded-full"/>
-      <span className="bottom-1 left-20 absolute  w-8 h-8 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+      <span className="bottom-2 left-24 absolute  w-10 h-10 bg-green-400 border-2 border-Medium-Purple rounded-full"></span>
     </div>
   );
 };
