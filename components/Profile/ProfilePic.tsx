@@ -2,8 +2,18 @@ import { NextComponentType, NextPage } from "next";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-const ProfilePic: NextPage = () => {
-  return <div></div>
+
+interface Props {
+  url: string
+  status: string
+}
+const ProfilePic: NextPage<Props> = ({url, status}) => {
+  
+  return (
+    <div>
+      <Image src />
+    </div>
+  )
 };
 
 export default ProfilePic;
