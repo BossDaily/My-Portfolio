@@ -13,7 +13,7 @@ const ProfilePic: NextPage<Props> = (props) => {
   }
   return (
     <div className="relative">
-      <Image src={url} height={128} width={128} loader={loaderProp}/>
+      <Image src={url} height={128} width={128} loader={loaderProp} className="rounded-full"/>
     </div>
   );
 };
