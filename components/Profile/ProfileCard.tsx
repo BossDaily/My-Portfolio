@@ -25,7 +25,7 @@ const ProfileCard: NextPage = () => {
           url={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
           status={status?.discord_status!}
         />
-        <h1></h1>
+        <h1>{status?.discord_user.username}#{status?.discord_user.discriminator}</h1>
       </div>
     );
   }
