@@ -10,8 +10,8 @@ interface Props {
 const ProfilePic: NextPage<Props> = ({url, status}) => {
   
   return (
-    <div>
-      <Image src />
+    <div className="relative">
+      <Image src={url} />
     </div>
   )
 };
