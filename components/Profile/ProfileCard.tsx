@@ -24,7 +24,7 @@ const ProfileCard: NextPage = () => {
         <h1>fortnite</h1>
         <ProfilePic
           url={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
-          status="online"
+          status={status?.discord_status!}
         />
       </div>
     );
