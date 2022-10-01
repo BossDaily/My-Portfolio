@@ -26,9 +26,9 @@ const ProfilePic: NextPage<Props> = (props) => {
         </div>
       );
       break;
-
-    default:
-      <div className="relative p-2">
+    case "idle":
+      return (
+        <div className="relative p-2">
           <Image
             src={url}
             height={128}
@@ -36,8 +36,21 @@ const ProfilePic: NextPage<Props> = (props) => {
             loader={loaderProp}
             className="rounded-full"
           />
-          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-gray-300 border-2 border-Medium-Purple rounded-full"></span>
+          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-yellow-400 border-2 border-Medium-Purple rounded-full"></span>
         </div>
+      );
+    
+    default:
+      <div className="relative p-2">
+        <Image
+          src={url}
+          height={128}
+          width={128}
+          loader={loaderProp}
+          className="rounded-full"
+        />
+        <span className="bottom-2 left-24 absolute  w-9 h-9 bg-gray-300 border-2 border-Medium-Purple rounded-full"></span>
+      </div>;
       break;
   }
   return (
