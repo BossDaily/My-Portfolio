@@ -20,11 +20,12 @@ const ProfileCard: NextPage = () => {
   });
   if (loading === false) {
     return (
-      <div className="w-80 h-full bg-Medium-Purple flex flex-col rounded-lg">
+      <div className="w-80 max-h-full bg-Medium-Purple flex flex-col rounded-lg">
         <ProfilePic
           url={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
           status={status?.discord_status!}
         />
+        <h1></h1>
       </div>
     );
   }
