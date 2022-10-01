@@ -1,15 +1,19 @@
 import { NextComponentType, NextPage } from "next";
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode } from "react";
 
 interface Props {
   url: string;
   status: string;
 }
-const ProfilePic: NextPage<Props> = ({ url, status }) => {
+const ProfilePic: NextPage<Props> = (props) => {
+  const { url, status} = props
+  const loaderProp =({ src, width }: ImageLoaderProps) => {
+    return `${src}?size=${width}`;
+  }
   return (
     <div className="relative">
-      <Image src={url} height={200} width={200} />
+      <Image src={url} height={128} width={128} loader={loaderProp}/>
     </div>
   );
 };
