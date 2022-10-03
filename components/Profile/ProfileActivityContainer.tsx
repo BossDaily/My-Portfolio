@@ -2,8 +2,10 @@ import { NextComponentType, NextPage } from "next";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-
-const ProfileActivityContainer: NextPage = () => {
+interface Props {
+  children: ReactNode
+}
+const ProfileActivityContainer: NextPage<Props> = ({children}) => {
   
   return (
     <div>
