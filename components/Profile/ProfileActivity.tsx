@@ -8,14 +8,15 @@ interface Props {
   name: string
   details: string
   state: string
+  applicationId: string
 }
 
 const ProfileActivity: NextPage<Props> = (props) => {
-  const {largeImage, smallImage, name, details, state} = props
+  const {largeImage, smallImage, name, details, state, applicationId} = props
 
   return ( 
     <div>
-      
+
     </div>
   )
 };
