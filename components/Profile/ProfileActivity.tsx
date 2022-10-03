@@ -15,8 +15,13 @@ const ProfileActivity: NextPage<Props> = (props) => {
   const {largeImage, smallImage, name, details, state, applicationId} = props
 
   return ( 
-    <div>
+    <div className="flex flex-row gap-1 p-2">
+      <div className="relative">
+        
+      </div>
+      <div>
 
+      </div>
     </div>
   )
 };
