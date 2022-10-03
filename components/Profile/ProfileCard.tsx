@@ -32,7 +32,14 @@ const ProfileCard: NextPage = () => {
             {status?.discord_user.username}#{status?.discord_user.discriminator}
           </h1>
           <ProfileActivityContainer>
-            <ProfileActivity details="Editing README.md" largeImage="565945077491433494" name="Visual Studio Code" smallImage="565945770067623946" state="Workspace: my-portfolio" applicationId="383226320970055681" />
+            <ProfileActivity
+              details="Editing README.md"
+              largeImage="565945077491433494"
+              name="Visual Studio Code"
+              smallImage="565945770067623946"
+              state="Workspace: my-portfolio"
+              applicationId="383226320970055681"
+            />
           </ProfileActivityContainer>
         </div>
       </div>
