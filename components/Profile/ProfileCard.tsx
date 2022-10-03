@@ -12,6 +12,7 @@ import { useLanyard } from "react-use-lanyard/dist";
 
 import type { Activity } from "react-use-lanyard/dist";
 import ProfilePic from "./ProfilePic";
+import ProfileActivityContainer from "./ProfileActivityContainer";
 
 const ProfileCard: NextPage = () => {
   const { loading, status } = useLanyard({
@@ -29,6 +30,7 @@ const ProfileCard: NextPage = () => {
           <h1 className="font-helvetica font-bold text-2xl p-2">
             {status?.discord_user.username}#{status?.discord_user.discriminator}
           </h1>
+          <ProfileActivityContainer />
         </div>
       </div>
     );
