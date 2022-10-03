@@ -28,7 +28,15 @@ const ProfileActivity: NextPage<Props> = (props) => {
           loader={loaderProp}
           className="rounded-xl"
         />
-        
+        <span className="bottom-0 left-10 absolute  w-9 h-9">
+          <Image
+            src={`https://cdn.discordapp.com/app-assets/${applicationId}/${smallImage}.png`}
+            height={32}
+            width={32}
+            loader={loaderProp}
+            className="rounded-full"
+          />
+        </span>
       </div>
       <div></div>
     </div>
