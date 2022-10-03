@@ -13,6 +13,7 @@ import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
 import ProfilePic from "./ProfilePic";
 import ProfileActivityContainer from "./ProfileActivityContainer";
+import ProfileActivity from "./ProfileActivity";
 
 const ProfileCard: NextPage = () => {
   const { loading, status } = useLanyard({
@@ -30,7 +31,9 @@ const ProfileCard: NextPage = () => {
           <h1 className="font-helvetica font-bold text-2xl p-2">
             {status?.discord_user.username}#{status?.discord_user.discriminator}
           </h1>
-          <ProfileActivityContainer />
+          <ProfileActivityContainer>
+            <ProfileActivity details="Battle Royale - 96 Remaining" largeImage="https://i.scdn.co/image/ab67616d0000b27398ea0e689c91f8fea726d9bb" name="Fortnite" smallImage="https://i.scdn.co/image/ab67616d0000b27398ea0e689c91f8fea726d9bb" state="Playing Duo"/>
+          </ProfileActivityContainer>
         </div>
       </div>
     );
