@@ -36,7 +36,7 @@ const ProfilePic: NextPage<Props> = (props) => {
             loader={loaderProp}
             className="rounded-full"
           />
-          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-yellow-400 border-2 border-Medium-Purple rounded-full"></span>
+          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-yellow-300 border-2 border-Medium-Purple rounded-full"></span>
         </div>
       );
       break;
@@ -50,7 +50,7 @@ const ProfilePic: NextPage<Props> = (props) => {
             loader={loaderProp}
             className="rounded-full"
           />
-          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-red-400 border-2 border-Medium-Purple rounded-full"></span>
+          <span className="bottom-2 left-24 absolute  w-9 h-9 bg-red-500 border-2 border-Medium-Purple rounded-full"></span>
         </div>
       );
       break;
