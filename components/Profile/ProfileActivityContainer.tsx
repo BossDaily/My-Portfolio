@@ -8,8 +8,8 @@ interface Props {
 const ProfileActivityContainer: NextPage<Props> = ({children}) => {
   
   return (
-    <div>
-
+    <div className="flex flex-col ">
+      {children}
     </div>
   )
 };
