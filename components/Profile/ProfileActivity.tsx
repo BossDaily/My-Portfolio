@@ -39,9 +39,9 @@ const ProfileActivity: NextPage<Props> = (props) => {
         </span>
       </div>
       <div className="flex flex-col px-4">
-        <p>{name}</p>
-        <p>{details}</p>
-        <p>{state}</p>
+        <ActivityText>{name}</ActivityText>
+        <ActivityText>{details}</ActivityText>
+        <ActivityText>{state}</ActivityText>
       </div>
     </div>
   );
@@ -53,8 +53,8 @@ interface AProps {
 
 const ActivityText:NextPage<AProps> = ({children}) => {
   return (
-    <p className="">
-
+    <p className="font-helvetica font-bold text-left">
+      {children}
     </p>
   )
 }
