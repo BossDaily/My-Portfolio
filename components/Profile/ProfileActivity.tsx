@@ -18,7 +18,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
     return `${src}?size=${width}`;
   };
 
-  const src = (applicationId: string, largeImage: string) => {
+  const srcLarge = (applicationId: string, largeImage: string) => {
 
     if (largeImage) {
       
