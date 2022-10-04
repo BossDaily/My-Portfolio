@@ -19,7 +19,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
   };
 
   return (
-    <div className="flex flex-row gap-1 p-2">
+    <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
       <div className="relative">
         <Image
           src={`https://cdn.discordapp.com/app-assets/${applicationId}/${largeImage}.png`}
@@ -38,7 +38,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
           />
         </span>
       </div>
-      <div className="flex flex-col px-4">
+      <div className="flex flex-col px-4 text-ellipsis overflow-hidden">
         <ActivityText>{name}</ActivityText>
         <ActivityText>{details}</ActivityText>
         <ActivityText>{state}</ActivityText>
@@ -53,7 +53,7 @@ interface AProps {
 
 const ActivityText:NextPage<AProps> = ({children}) => {
   return (
-    <p className="font-helvetica font-bold text-left">
+    <p className="font-helvetica font-bold text-left text-ellipsis">
       {children}
     </p>
   )
