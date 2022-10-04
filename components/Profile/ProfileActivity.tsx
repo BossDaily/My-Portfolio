@@ -20,6 +20,9 @@ const ProfileActivity: NextPage<Props> = (props) => {
 
   const src = (applicationId: string, largeImage: string) => {
 
+    if (largeImage) {
+      
+    }
   }
 
   return (
