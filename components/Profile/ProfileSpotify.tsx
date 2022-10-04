@@ -18,13 +18,6 @@ const ProfileActivity: NextPage<Props> = (props) => {
     return `${src}?size=${width}`;
   };
 
-  const src = (applicationId: string, largeImage: string) => {
-
-    if (largeImage) {
-      
-    }
-  }
-
   return (
     <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
       <div className="relative">
