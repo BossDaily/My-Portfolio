@@ -3,16 +3,16 @@ import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode } from "react";
 
 interface Props {
-  largeImage: string;
-  smallImage: string;
-  name: string;
-  details: string;
-  state: string;
-  applicationId: string;
+  image: string;
+  artist: string;
+  album: string;
+  title: string;
+  startTimestamp: string;
+  endTimestamp: string;
 }
 
 const ProfileActivity: NextPage<Props> = (props) => {
-  const { largeImage, smallImage, name, details, state, applicationId } = props;
+  const { image, artist, album, title, startTimestamp, endTimestamp } = props;
 
   const loaderProp = ({ src, width }: ImageLoaderProps) => {
     return `${src}?size=${width}`;
