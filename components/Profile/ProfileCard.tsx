@@ -14,12 +14,28 @@ import type { Activity } from "react-use-lanyard/dist";
 import ProfilePic from "./ProfilePic";
 import ProfileActivityContainer from "./ProfileActivityContainer";
 import ProfileActivity from "./ProfileActivity";
+import ProfileSpotify from "./ProfileSpotify";
 
 const ProfileCard: NextPage = () => {
   const { loading, status } = useLanyard({
     userId: "274973338676494347",
     socket: true,
   });
+
+  const spotifyCheck = () => {
+    if (status?.spotify) {
+      return (
+        <ProfileSpotify
+          image={status.spotify.album_art_url}
+          album={status.spotify.album}
+          artist={status.spotify.artist}
+          title={status.spotify.song}
+          startTimestamp={`${status.spotify.timestamps.start}`}
+          endTimestamp={`${status.spotify.timestamps.end}`}
+        />
+      );
+    }
+  };
   if (loading === false) {
     return (
       <div className="w-80 max-h-full bg-Medium-Purple flex flex-col rounded-lg">
@@ -32,14 +48,7 @@ const ProfileCard: NextPage = () => {
             {status?.discord_user.username}#{status?.discord_user.discriminator}
           </h1>
           <ProfileActivityContainer>
-            <ProfileActivity
-              details="Editing README.md"
-              largeImage="565945077491433494"
-              name="Visual Studio Code"
-              smallImage="565945770067623946"
-              state="Workspace: my-portfolio"
-              applicationId="383226320970055681"
-            />
+            {spotifyCheck()}
             {status?.activities.map((activity) => {
               if (activity.type === 0) {
                 return (
