@@ -38,9 +38,25 @@ const ProfileActivity: NextPage<Props> = (props) => {
           />
         </span>
       </div>
-      <div></div>
+      <div className="flex flex-col px-4">
+        <p>{name}</p>
+        <p>{details}</p>
+        <p>{state}</p>
+      </div>
     </div>
   );
 };
+
+interface AProps {
+  children: ReactNode
+}
+
+const ActivityText:NextPage<AProps> = ({children}) => {
+  return (
+    <p className="">
+
+    </p>
+  )
+}
 
 export default ProfileActivity;
