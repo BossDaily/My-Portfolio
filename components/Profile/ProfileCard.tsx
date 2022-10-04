@@ -40,6 +40,7 @@ const ProfileCard: NextPage = () => {
               state="Workspace: my-portfolio"
               applicationId="383226320970055681"
             />
+            
           </ProfileActivityContainer>
         </div>
       </div>
