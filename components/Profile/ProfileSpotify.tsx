@@ -11,7 +11,7 @@ interface Props {
   endTimestamp: string;
 }
 
-const ProfileActivity: NextPage<Props> = (props) => {
+const ProfileSpotify: NextPage<Props> = (props) => {
   const { image, artist, album, title, startTimestamp, endTimestamp } = props;
 
   const loaderProp = ({ src, width }: ImageLoaderProps) => {
@@ -22,7 +22,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
     <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
       <div className="relative">
         <Image
-          src={`https://cdn.discordapp.com/app-assets/${applicationId}/${largeImage}.png`}
+          src={`${image}`}
           height={64}
           width={64}
           loader={loaderProp}
@@ -30,9 +30,9 @@ const ProfileActivity: NextPage<Props> = (props) => {
         />
       </div>
       <div className="flex flex-col px-4 text-ellipsis overflow-hidden">
-        <ActivityText>{name}</ActivityText>
-        <ActivityText>{details}</ActivityText>
-        <ActivityText>{state}</ActivityText>
+        <ActivityText>{title}</ActivityText>
+        <ActivityText>{artist}</ActivityText>
+        <ActivityText>{album}</ActivityText>
       </div>
     </div>
   );
@@ -50,4 +50,4 @@ const ActivityText:NextPage<AProps> = ({children}) => {
   )
 }
 
-export default ProfileActivity;
+export default ProfileSpotify;
