@@ -43,8 +43,15 @@ const ProfileCard: NextPage = () => {
             {status?.activities.map((activity) => {
               if (activity.type === 0) {
                 return (
-                  <ProfileActivity />
-                )
+                  <ProfileActivity
+                    details={activity.details!}
+                    largeImage={activity.assets?.large_image!}
+                    smallImage={activity.assets?.small_image!}
+                    name={activity.name}
+                    state={activity.state}
+                    applicationId={activity.application_id!}
+                  />
+                );
               }
             })}
           </ProfileActivityContainer>
