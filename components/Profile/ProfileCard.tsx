@@ -40,7 +40,13 @@ const ProfileCard: NextPage = () => {
               state="Workspace: my-portfolio"
               applicationId="383226320970055681"
             />
-            
+            {status?.activities.map((activity) => {
+              if (activity.type === 0) {
+                return (
+                  <ProfileActivity />
+                )
+              }
+            })}
           </ProfileActivityContainer>
         </div>
       </div>
