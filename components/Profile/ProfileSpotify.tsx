@@ -19,35 +19,37 @@ const ProfileSpotify: NextPage<Props> = (props) => {
   };
 
   return (
-    <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
-      <div className="relative">
-        <Image
-          src={`${image}`}
-          height={64}
-          width={64}
-          loader={loaderProp}
-          className="rounded-xl"
-        />
-      </div>
-      <div className="flex flex-col px-4 text-ellipsis overflow-hidden">
-        <ActivityText>{title}</ActivityText>
-        <ActivityText>{artist}</ActivityText>
-        <ActivityText>{album}</ActivityText>
+    <div className="flex flex-col gap-2">
+      <div className="flex flex-row gap-2 p-2 text-ellipsis overflow-hidden">
+        <div className="relative">
+          <Image
+            src={`${image}`}
+            height={64}
+            width={64}
+            loader={loaderProp}
+            className="rounded-xl"
+          />
+        </div>
+        <div className="flex flex-col text-ellipsis overflow-hidden ">
+          <ActivityText>{title}</ActivityText>
+          <ActivityText>{artist}</ActivityText>
+          <ActivityText>{album}</ActivityText>
+        </div>
       </div>
     </div>
   );
 };
 
 interface AProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const ActivityText:NextPage<AProps> = ({children}) => {
+const ActivityText: NextPage<AProps> = ({ children }) => {
   return (
-    <p className="font-helvetica font-bold text-left text-ellipsis">
+    <p className="font-helvetica font-bold text-left text-ellipsis text-sm">
       {children}
     </p>
-  )
-}
+  );
+};
 
 export default ProfileSpotify;
