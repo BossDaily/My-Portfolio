@@ -30,8 +30,8 @@ const ProfileCard: NextPage = () => {
           album={status.spotify.album}
           artist={status.spotify.artist}
           title={status.spotify.song}
-          startTimestamp={`${status.spotify.timestamps.start}`}
-          endTimestamp={`${status.spotify.timestamps.end}`}
+          startTimestamp={status.spotify.timestamps.start}
+          endTimestamp={status.spotify.timestamps.end}
         />
       );
     }

@@ -8,8 +8,8 @@ interface Props {
   artist: string;
   album: string;
   title: string;
-  startTimestamp: string;
-  endTimestamp: string;
+  startTimestamp: number;
+  endTimestamp: number;
 }
 
 const ProfileSpotify: NextPage<Props> = (props) => {
