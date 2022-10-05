@@ -18,7 +18,9 @@ const ProfileSpotify: NextPage<Props> = (props) => {
   const loaderProp = ({ src, width }: ImageLoaderProps) => {
     return `${src}?size=${width}`;
   };
-
+  const songTime = new Date(endTimestamp)
+  const currentSongTime = new Date(startTimestamp)
+  
   return (
     <div className="flex flex-col gap-2">
       <div className="flex flex-row gap-2 px-2 text-ellipsis overflow-hidden">
@@ -38,6 +40,9 @@ const ProfileSpotify: NextPage<Props> = (props) => {
         </div>
       </div>
       <div className="flex flex-col px-2 pb-2">
+        <div className="flex flex-row">
+
+        </div>
         <Progress progress={endTimestamp - startTimestamp} />
       </div>
     </div>
