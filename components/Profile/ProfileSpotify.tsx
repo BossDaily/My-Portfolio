@@ -1,3 +1,4 @@
+import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
 import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode } from "react";
@@ -32,9 +33,12 @@ const ProfileSpotify: NextPage<Props> = (props) => {
         </div>
         <div className="flex flex-col text-ellipsis overflow-hidden ">
           <ActivityText>{title}</ActivityText>
-          <ActivityText>{artist}</ActivityText>
+          <ActivityText>{artist.replace(';', ',')}</ActivityText>
           <ActivityText>{album}</ActivityText>
         </div>
+      </div>
+      <div>
+        <Progress progress={0} />
       </div>
     </div>
   );
