@@ -44,7 +44,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
       </div>
       <div className="flex flex-col px-2 pb-2">
         <div className="flex flex-row justify-between">
-        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format('mm:ss')}}`}</span>
+        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format('mm:ss')}`}</span>
         <span className="text-sm font-medium text-blue-700 dark:text-white">{`${songLength.format('mm:ss')}`}</span>
         </div>
         <Progress progress={43} />
