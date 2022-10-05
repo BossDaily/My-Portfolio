@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
 import Image, { ImageLoaderProps } from "next/image";
@@ -18,8 +19,10 @@ const ProfileSpotify: NextPage<Props> = (props) => {
   const loaderProp = ({ src, width }: ImageLoaderProps) => {
     return `${src}?size=${width}`;
   };
-  const songTime = new Date(endTimestamp / 1000)
-  const currentSongTime = new Date(startTimestamp / 1000)
+  const songTime = dayjs.unix(endTimestamp / 1000)
+  const currentSongTime = dayjs.unix(startTimestamp / 1000)
+  const songLength = dayjs.unix(endTimestamp / 1000 - startTimestamp / 1000)
+  const now = dayjs()
 
   return (
     <div className="flex flex-col gap-2">
@@ -41,8 +44,8 @@ const ProfileSpotify: NextPage<Props> = (props) => {
       </div>
       <div className="flex flex-col px-2 pb-2">
         <div className="flex flex-row justify-between">
-        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.getMinutes()}:${currentSongTime.getSeconds()} ${currentSongTime.getTime()}`}</span>
-        <span className="text-sm font-medium text-blue-700 dark:text-white">{`${songTime.getMinutes()}:${songTime.getSeconds()} ${songTime.getTime()}`}</span>
+        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format('mm:ss')} ${currentSongTime.unix()}`}</span>
+        <span className="text-sm font-medium text-blue-700 dark:text-white">{`${songLength.format('mm:ss')}`}</span>
         </div>
         <Progress progress={43} />
       </div>
