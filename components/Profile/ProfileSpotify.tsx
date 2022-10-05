@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
 import Image, { ImageLoaderProps } from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 interface Props {
   image: string;
@@ -23,6 +23,22 @@ const ProfileSpotify: NextPage<Props> = (props) => {
   const currentSongTime = dayjs(Date.now() - startTimestamp);
   const songLength = dayjs(endTimestamp - startTimestamp);
   const now = dayjs();
+  
+  const currentTimeFormat = () => {
+    setTimeLeft(currentSongTime.format("mm:ss"));
+  };
+  const timer = () => {
+    setInterval(currentTimeFormat, 500);
+  };
+
+  const [timeLeft, setTimeLeft] = useState("");
+
+  useEffect(() => {
+    const timerID = setTimeout(currentTimeFormat, 1000);
+    return () => {
+      clearTimeout(timerID)
+    }
+  }, [timeLeft]);
 
   return (
     <div className="flex flex-col gap-2">
@@ -44,15 +60,16 @@ const ProfileSpotify: NextPage<Props> = (props) => {
       </div>
       <div className="flex flex-col px-2 pb-2">
         <div className="flex flex-row justify-between">
-          
-          <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format(
-            "mm:ss"
-          )}`}</span>
+          <span className="text-base font-medium text-blue-700 dark:text-white">
+            {timeLeft}
+          </span>
           <span className="text-sm font-medium text-blue-700 dark:text-white">{`${songLength.format(
             "mm:ss"
           )}`}</span>
         </div>
-        <Progress progress={Math.floor(startTimestamp / endTimestamp * 100)} />
+        <Progress
+          progress={Math.floor((startTimestamp / endTimestamp) * 100)}
+        />
       </div>
     </div>
   );
