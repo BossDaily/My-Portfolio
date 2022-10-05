@@ -21,7 +21,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex flex-row gap-2 p-2 text-ellipsis overflow-hidden">
+      <div className="flex flex-row gap-2 px-2 text-ellipsis overflow-hidden">
         <div className="relative">
           <Image
             src={`${image}`}
@@ -37,8 +37,8 @@ const ProfileSpotify: NextPage<Props> = (props) => {
           <ActivityText>{album}</ActivityText>
         </div>
       </div>
-      <div>
-        <Progress progress={0} />
+      <div className="flex flex-col px-2 pb-2">
+        <Progress progress={endTimestamp - startTimestamp} />
       </div>
     </div>
   );
