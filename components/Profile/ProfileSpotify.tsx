@@ -20,7 +20,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
     return `${src}?size=${width}`;
   };
   const songTime = dayjs.unix(endTimestamp / 1000)
-  const currentSongTime = dayjs.unix(startTimestamp / 1000)
+  const currentSongTime = dayjs.unix(Date.now() / 1000 - startTimestamp / 1000)
   const songLength = dayjs.unix(endTimestamp / 1000 - startTimestamp / 1000)
   const now = dayjs()
 
@@ -44,7 +44,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
       </div>
       <div className="flex flex-col px-2 pb-2">
         <div className="flex flex-row justify-between">
-        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format('mm:ss')} ${currentSongTime.unix()}`}</span>
+        <span className="text-base font-medium text-blue-700 dark:text-white">{`${currentSongTime.format('mm:ss')}}`}</span>
         <span className="text-sm font-medium text-blue-700 dark:text-white">{`${songLength.format('mm:ss')}`}</span>
         </div>
         <Progress progress={43} />
