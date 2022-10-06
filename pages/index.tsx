@@ -22,15 +22,23 @@ import { Tabs, Flowbite } from "flowbite-react";
 import LangCard from "../components/LangCard/LangCard";
 import LangCardContainer from "../components/LangCard/LangCardContainer";
 import ProfileCard from "../components/Profile/ProfileCard";
+import { useLanyard } from "react-use-lanyard/dist";
 
 const Home: NextPage = ({
   codeTime,
   github,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+  const { loading, status } = useLanyard({
+    userId: "274973338676494347",
+    socket: true,
+  });
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
       <Head>
-        
+        <meta name="theme-color" content="#1da1f2" />
+        <meta name="msapplication-TileColor" content="#1da1f2" />
+        <title>{status?.discord_user.username} Personal Website</title>
+        <meta name="twitter:image" content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}></meta>
       </Head>
       <section>
         <HeroContainer>
@@ -212,34 +220,54 @@ const Home: NextPage = ({
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                 }
               />
-              <LangCard lang={'Linux'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'}/>
-              <LangCard lang={'Figma'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'}/>
-              <LangCard lang={'Github'} icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'}/>
-              <LangCard lang={'IntelliJ'} icon={'https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg'}/>
+              <LangCard
+                lang={"Linux"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                }
+              />
+              <LangCard
+                lang={"Figma"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                }
+              />
+              <LangCard
+                lang={"Github"}
+                icon={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                }
+              />
+              <LangCard
+                lang={"IntelliJ"}
+                icon={
+                  "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
           <Tabs.Item title={"Productivity"}>
             <LangCardContainer>
-              
               <LangCard
                 lang={"Trello"}
                 icon={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
                 }
               />
-              <LangCard lang={'Notion'} icon={'https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png'}/>
-              
+              <LangCard
+                lang={"Notion"}
+                icon={
+                  "https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png"
+                }
+              />
             </LangCardContainer>
           </Tabs.Item>
         </Tabs.Group>
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
       <section>
-        <Title>
-          What I'm upto
-        </Title>
-        <ProfileCard/>
-        
+        <Title>What I'm upto</Title>
+        <ProfileCard />
       </section>
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
@@ -288,12 +316,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   });
 
- 
   return {
     props: {
       codeTime,
       github,
-      
     },
   };
 };
