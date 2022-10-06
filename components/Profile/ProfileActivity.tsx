@@ -39,7 +39,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
         />
         <span className="top-11 left-12 absolute  w-9 h-9">
           <Image
-            src={`https://cdn.discordapp.com/app-assets/${applicationId}/${smallImage}.png`}
+            src={src(applicationId, largeImage)}
             height={24}
             width={24}
             loader={loaderProp}
