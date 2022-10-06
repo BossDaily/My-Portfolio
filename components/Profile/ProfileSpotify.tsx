@@ -68,7 +68,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
           )}`}</span>
         </div>
         <Progress
-          progress={Math.floor((startTimestamp / endTimestamp) * 100)}
+          progress={Math.floor((currentSongTime.unix() / songLength.unix()) * 100)}
         />
       </div>
     </div>
