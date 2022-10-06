@@ -29,6 +29,9 @@ const Home: NextPage = ({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <div className="m-0 font-helvetica text-white bg-[#10002B]">
+      <Head>
+        
+      </Head>
       <section>
         <HeroContainer>
           <h1>Hello Im BossDaily 👋</h1>
