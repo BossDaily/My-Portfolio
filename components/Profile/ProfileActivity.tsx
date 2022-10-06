@@ -18,10 +18,12 @@ const ProfileActivity: NextPage<Props> = (props) => {
     return `${src}?size=${width}`;
   };
 
-  const src = (applicationId: string, img: string) => {
-
-    if (largeImage) {
-      
+  const src = (applicationID: string, img: string) => {
+    const regex = /(mp:external\/)/g
+    if (regex.test(img)) {
+      return `https://media.discordapp.net/external/${img.replace(regex,'')}`
+    } else {
+      return `https://cdn.discordapp.com/app-assets/${applicationID}/${img}.png`
     }
   }
 
@@ -29,7 +31,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
     <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
       <div className="relative">
         <Image
-          src={`https://cdn.discordapp.com/app-assets/${applicationId}/${largeImage}.png`}
+          src={src(applicationId, largeImage)}
           height={64}
           width={64}
           loader={loaderProp}
