@@ -54,7 +54,7 @@ const ProfileSpotify: NextPage<Props> = (props) => {
         </div>
         <div className="flex flex-col text-ellipsis overflow-hidden ">
           <ActivityText>{title}</ActivityText>
-          <ActivityText>{artist.replace(";", ",")}</ActivityText>
+          <ActivityText>{artist.replace(/(;)/g, ",")}</ActivityText>
           <ActivityText>{album}</ActivityText>
         </div>
       </div>
