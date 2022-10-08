@@ -28,7 +28,15 @@ const ProfileActivity: NextPage<Props> = (props) => {
   }
 
   const imgCheck = (img: string) => {
-    
+    if(img != undefined) {
+      return <Image
+      src={src(applicationId, img)}
+      height={64}
+      width={64}
+      loader={loaderProp}
+      className="rounded-xl"
+    />
+    }
   }
 
   return (
@@ -44,13 +52,7 @@ const ProfileActivity: NextPage<Props> = (props) => {
           className="rounded-xl"
         />}
         <span className="top-11 left-12 absolute  w-9 h-9">
-          <Image
-            src={src(applicationId, smallImage)}
-            height={24}
-            width={24}
-            loader={loaderProp}
-            className="rounded-full"
-          />
+         {imgCheck(smallImage)}
         </span>
       </div>
       <div className="flex flex-col px-4 text-ellipsis overflow-hidden">
