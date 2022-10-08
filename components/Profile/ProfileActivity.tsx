@@ -27,6 +27,10 @@ const ProfileActivity: NextPage<Props> = (props) => {
     }
   }
 
+  const imgCheck = (img: string) => {
+    
+  }
+
   return (
     <div className="flex flex-row gap-1 p-2 text-ellipsis overflow-hidden">
       <div className="relative">
