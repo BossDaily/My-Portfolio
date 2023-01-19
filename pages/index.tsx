@@ -87,7 +87,7 @@ const Home: NextPage = ({
         <CardContainer>
           <Card
             btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot"
+            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
             title="Observer Bot"
             thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
           >
@@ -101,7 +101,7 @@ const Home: NextPage = ({
           </Card>
           <Card
             btnName="Repo"
-            link="https://github.com/ana-log"
+            link="https://github.com/analog-org"
             title="Analog"
             thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png"
           >
@@ -123,8 +123,7 @@ const Home: NextPage = ({
             aims to be an innovative and new global ban list of problematic
             players in smaller Minecraft SMP communities. Im working on the
             Discord bot admins can use to add and review the database of
-            players. This bot will use the framework for Discord bots that I
-            built for analog meaning it supports modern Discord API features.
+            players. This bot is functional but the repo is private, and it uses Analog-TS a framework I built.
           </Card>
         </CardContainer>
       </section>
