@@ -1,9 +1,12 @@
 {
+  "name": "my-portfolio",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 22548",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.7.14",

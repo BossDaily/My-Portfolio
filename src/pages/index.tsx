@@ -6,22 +6,22 @@ import type {
 } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import BottomVectorWaves from "../components/Waves/BottomVectorWaves";
-import TopVectorWaves from "../components/Waves/TopVectorWaves";
-import Avatar from "../components/Avatar/Avatar";
-import HeroContainer from "../components/Hero/HeroContainer";
+import BottomVectorWaves from "../../../components/Waves/BottomVectorWaves";
+import TopVectorWaves from "../../../components/Waves/TopVectorWaves";
+import Avatar from "../../../components/Avatar/Avatar";
+import HeroContainer from "../../../components/Hero/HeroContainer";
 import TypewriterComponent from "typewriter-effect";
-import StatsContainer from "../components/Stats/StatsContainer";
-import StatsItem from "../components/Stats/StatsItem";
+import StatsContainer from "../../../components/Stats/StatsContainer";
+import StatsItem from "../../../components/Stats/StatsItem";
 import { gql } from "@apollo/client";
 import client from "../apollo-client";
-import Title from "../components/Title";
-import Card from "../components/Card/Card";
-import CardContainer from "../components/Card/CardContainer";
+import Title from "../../../components/Title";
+import Card from "../../../components/Card/Card";
+import CardContainer from "../../../components/Card/CardContainer";
 import { Tabs, Flowbite } from "flowbite-react";
-import LangCard from "../components/LangCard/LangCard";
-import LangCardContainer from "../components/LangCard/LangCardContainer";
-import ProfileCard from "../components/Profile/ProfileCard";
+import LangCard from "../../../components/LangCard/LangCard";
+import LangCardContainer from "../../../components/LangCard/LangCardContainer";
+import ProfileCard from "../../../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
 
 const Home: NextPage = ({
