@@ -6,7 +6,7 @@ import {
   GetStaticProps,
   InferGetStaticPropsType,
 } from "next";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ReactNode } from "react";
 import { useLanyard } from "react-use-lanyard/dist";
 

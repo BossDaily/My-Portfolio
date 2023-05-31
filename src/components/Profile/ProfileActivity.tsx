@@ -1,5 +1,5 @@
 import { NextComponentType, NextPage } from "next";
-import Image, { ImageLoaderProps } from "next/legacy/image";
+import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode } from "react";
 
 interface Props {
@@ -36,7 +36,10 @@ const ProfileActivity: NextPage<Props> = (props) => {
           width={size}
           loader={loaderProp}
           className="rounded-xl"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       );
     }
   };

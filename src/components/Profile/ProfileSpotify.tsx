@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
-import Image, { ImageLoaderProps } from "next/legacy/image";
+import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode, useEffect, useState } from "react";
 
 interface Props {
@@ -50,7 +50,10 @@ const ProfileSpotify: NextPage<Props> = (props) => {
             width={64}
             loader={loaderProp}
             className="rounded-xl"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className="flex flex-col text-ellipsis overflow-hidden ">
           <ActivityText>{title}</ActivityText>

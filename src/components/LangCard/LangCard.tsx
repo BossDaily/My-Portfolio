@@ -1,5 +1,5 @@
 import { NextComponentType, NextPage } from "next";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ReactNode } from "react";
 import LangIcon from "./LangIcon";
 import LangText from "./LangText";

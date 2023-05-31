@@ -1,6 +1,6 @@
 
 
-import Image, { ImageLoaderProps } from "next/legacy/image";
+import Image, { ImageLoaderProps } from "next/image";
 import { NextPage, NextComponentType } from "next";
 
 interface Props {
@@ -17,17 +17,18 @@ const Img: NextPage<Props> = (props) => {
       }
 
     return (
-        
         <div className="rounded-full ring  p-1 overflow-visible max-w-sm max-h-sm" style={{ '--tw-ring-color': `${borderColor}` }}>
-            <Image 
-            src={url}
-            alt='BossDailys pfp'
-            className="rounded-full"
-            height={1024}
-            width={1024}
-            loader={loaderProp}
-            
-            />
+            <Image
+                src={url}
+                alt='BossDailys pfp'
+                className="rounded-full"
+                height={1024}
+                width={1024}
+                loader={loaderProp}
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
         </div>
     );
 }
