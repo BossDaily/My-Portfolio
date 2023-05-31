@@ -1,6 +1,6 @@
 
 import { NextPage } from "next";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ReactNode } from "react";
 
 type Props = {

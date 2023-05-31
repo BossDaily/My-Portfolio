@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Img from "./Img";
 import { useLanyard } from "react-use-lanyard/dist";
 import type { Activity } from "react-use-lanyard/dist";
