@@ -1,3 +1,5 @@
+"use client"
+
 import dayjs from "dayjs";
 import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";

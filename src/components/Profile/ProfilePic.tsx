@@ -1,3 +1,5 @@
+"use client"
+
 import { NextComponentType, NextPage } from "next";
 import Image, { ImageLoaderProps } from "next/image";
 import { ReactNode } from "react";

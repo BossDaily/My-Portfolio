@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Img from "./Img";
 import { useLanyard } from "react-use-lanyard/dist";

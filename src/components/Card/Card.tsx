@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
 import { ReactNode } from "react";

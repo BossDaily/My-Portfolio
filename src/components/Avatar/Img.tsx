@@ -1,4 +1,4 @@
-
+"use client"
 
 import Image, { ImageLoaderProps } from "next/image";
 import { NextPage, NextComponentType } from "next";
