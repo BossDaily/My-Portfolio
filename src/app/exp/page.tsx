@@ -16,6 +16,7 @@ import LangCard from "../../components/LangCard/LangCard";
 import LangCardContainer from "../../components/LangCard/LangCardContainer";
 import ProfileCard from "../../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
+import { Typewriter } from "@/components/Hero/Typewriter";
 
 export default async function Home() {
   const waka = await fetch(
@@ -63,20 +64,7 @@ export default async function Home() {
               <Avatar />
             </div>
             <div className="flex items-center justify-center">
-              <TypewriterComponent
-                options={{
-                  strings: [
-                    "Discord Bot Dev",
-                    "Web Developer",
-                    "Aspiring App Developer",
-                    "Open Source Enthusiast",
-                    "Minecraft server owner",
-                    "Sigma Male",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              <Typewriter/>
             </div>
           </HeroContainer>
         </section>
