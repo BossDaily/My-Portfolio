@@ -42,11 +42,12 @@ const Home: NextPage = ({
       </Head>
       <section>
         <HeroContainer>
-          <h1>Hello Im BossDaily 👋</h1>
-          <div className="flex-none flex-nowrap">
+          <h1 className="flex items-center justify-center">Hello Im BossDaily 👋</h1>
+          <div className="flex items-center justify-center">
             <Avatar />
           </div>
-          <TypewriterComponent
+          <div className="flex items-center justify-center">
+            <TypewriterComponent
             options={{
               strings: [
                 "Discord Bot Dev",
@@ -60,6 +61,8 @@ const Home: NextPage = ({
               loop: true,
             }}
           />
+          </div>
+          
         </HeroContainer>
       </section>
       <TopVectorWaves url={"hero_layered_waves1.svg"} />
