@@ -17,7 +17,40 @@ import LangCardContainer from "../../components/LangCard/LangCardContainer";
 import ProfileCard from "../../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
 
-export default function Home() {
+export default async function Home() {
+  const waka = await fetch(
+    "https://wakatime.com/api/v1/users/current/all_time_since_today",
+    {
+      method: "GET",
+      headers: {
+        "content-type": "application/json",
+        Authorization: `Basic ${process.env.WAKATIME}`,
+      },
+    }
+  );
+  const codeTime = await waka.json();
+
+  const github = await client.query({
+    query: gql`
+      query ($login: String!, $includeUserRepositories: Boolean) {
+        user(login: $login) {
+          repositoriesContributedTo(
+            includeUserRepositories: $includeUserRepositories
+          ) {
+            totalCount
+          }
+          contributionsCollection {
+            totalCommitContributions
+          }
+        }
+      }
+    `,
+    variables: {
+      login: "BossDaily",
+      includeUserRepositories: true,
+    },
+  });
+
   return (
     <main>
       <div className="m-0 font-helvetica text-white bg-[#10002B]">
@@ -117,7 +150,7 @@ export default function Home() {
         <TopVectorWaves url="bottom-wave4.svg" />
         <section className="bg-[#C77DFF]">
           <Title>Tools I use</Title>
-          <Tabs.Group style="pills">
+          {/* <Tabs.Group style="pills">
             <Tabs.Item title={"Frontend"}>
               <LangCardContainer>
                 <LangCard
@@ -248,7 +281,7 @@ export default function Home() {
                 />
               </LangCardContainer>
             </Tabs.Item>
-          </Tabs.Group>
+          </Tabs.Group> */}
         </section>
         <BottomVectorWaves url="top-layered-waves4.svg" />
         <section>
