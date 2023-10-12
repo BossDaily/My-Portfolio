@@ -84,5 +84,5 @@ module.exports = {
       "accordion-up": "accordion-up 0.2s ease-out",
     },
   },
-  plugins: [require("flowbite/plugin"), require("tailwindcss-animate")],
+  plugins: [require("flowbite/plugin"), require("tailwindcss-animate"), require("tailwindcss-animate")],
 };
