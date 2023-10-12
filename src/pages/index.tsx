@@ -38,31 +38,35 @@ const Home: NextPage = ({
         <meta name="theme-color" content="#1da1f2" />
         <meta name="msapplication-TileColor" content="#1da1f2" />
         <title>{status?.discord_user.username} Personal Website</title>
-        <meta name="twitter:image" content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}></meta>
+        <meta
+          name="twitter:image"
+          content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
+        ></meta>
       </Head>
       <section>
         <HeroContainer>
-          <h1 className="flex items-center justify-center">Hello Im BossDaily 👋</h1>
+          <h1 className="flex items-center justify-center">
+            Hello Im BossDaily 👋
+          </h1>
           <div className="flex items-center justify-center">
             <Avatar />
           </div>
           <div className="flex items-center justify-center">
             <TypewriterComponent
-            options={{
-              strings: [
-                "Discord Bot Dev",
-                "Web Developer",
-                "Aspiring App Developer",
-                "Open Source Enthusiast",
-                "Minecraft server owner",
-                "Sigma Male",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+              options={{
+                strings: [
+                  "Discord Bot Dev",
+                  "Web Developer",
+                  "Aspiring App Developer",
+                  "Open Source Enthusiast",
+                  "Minecraft server owner",
+                  "Sigma Male",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </div>
-          
         </HeroContainer>
       </section>
       <TopVectorWaves url={"hero_layered_waves1.svg"} />
@@ -126,7 +130,8 @@ const Home: NextPage = ({
             aims to be an innovative and new global ban list of problematic
             players in smaller Minecraft SMP communities. Im working on the
             Discord bot admins can use to add and review the database of
-            players. This bot is functional but the repo is private, and it uses Analog-TS a framework I built.
+            players. This bot is functional but the repo is private, and it uses
+            Analog-TS a framework I built.
           </Card>
         </CardContainer>
       </section>
@@ -268,8 +273,12 @@ const Home: NextPage = ({
       </section>
       <BottomVectorWaves url="top-layered-waves4.svg" />
       <section>
-        <Title>What I'm upto</Title>
-        <ProfileCard />
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center">
+            <Title>What I'm upto</Title>
+            <ProfileCard />
+          </div>
+        </div>
       </section>
       <TopVectorWaves url="bottom-layered-waves2.svg" />
       <section className="bg-[#C77DFF]">
