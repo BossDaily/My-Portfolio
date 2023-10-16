@@ -5,7 +5,7 @@ import type {
   InferGetServerSidePropsType,
 } from "next";
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import BottomVectorWaves from "../components/Waves/BottomVectorWaves";
 import TopVectorWaves from "../components/Waves/TopVectorWaves";
 import Avatar from "../components/Avatar/Avatar";
