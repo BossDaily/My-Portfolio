@@ -45,7 +45,7 @@ const ProfileCard: NextPage = () => {
         />
         <div className="m-2 bg-Purple-Heart rounded-xl">
           <h1 className="font-helvetica font-bold text-2xl p-2">
-            {status?.discord_user.username}#{status?.discord_user.discriminator}
+            {status?.discord_user.username}
           </h1>
           <ProfileActivityContainer>
             {spotifyCheck()}
