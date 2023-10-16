@@ -17,6 +17,7 @@ import LangCardContainer from "../../components/LangCard/LangCardContainer";
 import ProfileCard from "../../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
 import { Typewriter } from "@/components/Hero/Typewriter";
+import { ProjectCard } from "@/components/project-card";
 
 export default async function Home() {
   const waka = await fetch(
@@ -64,7 +65,7 @@ export default async function Home() {
               <Avatar />
             </div>
             <div className="flex items-center justify-center">
-              <Typewriter/>
+              <Typewriter />
             </div>
           </HeroContainer>
         </section>
@@ -90,6 +91,20 @@ export default async function Home() {
         <BottomVectorWaves url={"stats_bottom_wave2.svg"} />
         <section>
           <Title>Projects</Title>
+
+          <div className="flex flex-col items-center justify-center sm:flex-row sm:flex-wrap sm:justify-start">
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <ProjectCard />
+            </div>
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <ProjectCard />
+            </div>
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <ProjectCard />
+            </div>
+            {/* Add more ProjectCard components here */}
+          </div>
+
           <CardContainer>
             <Card
               btnName="Repo"

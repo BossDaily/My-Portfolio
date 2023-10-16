@@ -24,21 +24,14 @@ export function ProjectCard() {
       />
       <CardContent className="p-4">
         <h2 className="text-2xl font-bold hover:text-gray-700 transition-all duration-200">Emily Johnson</h2>
-        <h3 className="text-gray-500 hover:text-gray-600 transition-all duration-200">Front-end Developer</h3>
         <p className="mt-2 text-gray-600 hover:text-gray-700 transition-all duration-200">
           Passionate about creating interactive user interfaces.
         </p>
         <div className="flex mt-4 space-x-2">
-          <Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
-            Follow
+          <Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200 bg-purple-700  " size="sm">
+            Link
           </Button>
-          <Button
-            className="w-full hover:border-gray-700 hover:text-gray-700 transition-all duration-200"
-            size="sm"
-            variant="outline"
-          >
-            Message
-          </Button>
+        
         </div>
       </CardContent>
     </Card>
