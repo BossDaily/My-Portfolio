@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { Progress } from "flowbite-react";
 import { NextComponentType, NextPage } from "next";
-import Image, { ImageLoaderProps } from "next/image";
+import Image, { ImageLoaderProps } from "next/legacy/image";
 import { ReactNode, useEffect, useState } from "react";
 
 interface Props {

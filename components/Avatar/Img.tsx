@@ -1,6 +1,6 @@
 
 
-import Image, { ImageLoaderProps } from "next/image";
+import Image, { ImageLoaderProps } from "next/legacy/image";
 import { NextPage, NextComponentType } from "next";
 
 interface Props {
