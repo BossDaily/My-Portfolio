@@ -5,6 +5,7 @@
 import { Button } from "@/components/ui/button";
 import { CardContent, Card } from "@/components/ui/card";
 import { ReactNode } from "react";
+import { Badge } from "./ui/badge";
 
 type Props = {
   children: ReactNode;
@@ -45,9 +46,9 @@ export function ProjectCard({
         </h2>
         <h3 className="text-white hover:text-gray-600 transition-all duration-200">
           {tags.map((tag) => (
-            <span className="mr-2" key={tag}>
+            <Badge className="mr-2 bg-purple-600" key={tag}>
               {tag}
-            </span>
+            </Badge>
           ))}
         </h3>
         <p className="mt-2 text-white hover:text-gray-700 transition-all duration-200">
