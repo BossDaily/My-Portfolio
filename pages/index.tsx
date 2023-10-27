@@ -89,7 +89,21 @@ const Home: NextPage = ({
       <section>
         <Title>Projects</Title>
         <CardContainer>
-          <ProjectCard />
+          <ProjectCard
+            btnName="Repo"
+            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+            title="Observer Bot"
+            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+          >
+            Observer Bot is a Discord bot I built for my Minecraft server in
+            Discord.js. This bot mainly queries stats from a Minecraft server
+            with ServerTAP installed and shows them in a Discord embed. I made
+            this because a lot of other solutions to do this sucked so I thought
+            I would make one myself. The bot also shows information about the
+            Discord server it is on, and members in the Discord server. And soon
+            it will be able to show stats about the Minecraft server.
+          </ProjectCard>
           <Card
             btnName="Repo"
             link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
