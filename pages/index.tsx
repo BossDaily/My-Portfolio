@@ -23,6 +23,7 @@ import LangCard from "../components/LangCard/LangCard";
 import LangCardContainer from "../components/LangCard/LangCardContainer";
 import ProfileCard from "../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
+import { ProjectCard } from "../@/components/project-card";
 
 const Home: NextPage = ({
   codeTime,
@@ -38,7 +39,10 @@ const Home: NextPage = ({
         <meta name="theme-color" content="#1da1f2" />
         <meta name="msapplication-TileColor" content="#1da1f2" />
         <title>{status?.discord_user.username} Personal Website</title>
-        <meta name="twitter:image" content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}></meta>
+        <meta
+          name="twitter:image"
+          content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
+        ></meta>
       </Head>
       <section>
         <HeroContainer>
@@ -85,6 +89,7 @@ const Home: NextPage = ({
       <section>
         <Title>Projects</Title>
         <CardContainer>
+          <ProjectCard />
           <Card
             btnName="Repo"
             link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
@@ -113,6 +118,7 @@ const Home: NextPage = ({
             will also need a plugin repo, a landing page, and several
             documentation pages.
           </Card>
+
           <Card
             btnName="Repo"
             link="https://github.com/simpsmc"
@@ -123,7 +129,8 @@ const Home: NextPage = ({
             aims to be an innovative and new global ban list of problematic
             players in smaller Minecraft SMP communities. Im working on the
             Discord bot admins can use to add and review the database of
-            players. This bot is functional but the repo is private, and it uses Analog-TS a framework I built.
+            players. This bot is functional but the repo is private, and it uses
+            Analog-TS a framework I built.
           </Card>
         </CardContainer>
       </section>

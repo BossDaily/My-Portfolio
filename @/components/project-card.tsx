@@ -5,7 +5,7 @@
 import { Button } from "@/components/ui/button"
 import { CardContent, Card } from "@/components/ui/card"
 
-export function project-card() {
+export function ProjectCard() {
   return (
     <Card
       key="1"
