@@ -9,7 +9,7 @@ type Props = {
 }
 const StatsItem: NextPage<Props> = ({ icon, stat }) => {
     return (
-        <div className="p-8 flex flex-col">
+        <div className="p-8 flex flex-col items-center">
             <Image
                 src={icon}
                 height={100}
