@@ -44,7 +44,7 @@ const Home: NextPage = ({
           content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
         ></meta>
       </Head>
-      <section>
+      <div>
         <HeroContainer>
           <h1>Hello Im BossDaily 👋</h1>
           <div className="flex-none flex-nowrap">
@@ -65,9 +65,9 @@ const Home: NextPage = ({
             }}
           />
         </HeroContainer>
-      </section>
+      </div>
       <TopVectorWaves url={"hero_layered_waves1.svg"} />
-      <section className="bg-[#C77DFF]">
+      <div className="bg-[#C77DFF]">
         <div className="items-center">
           <StatsContainer>
             <StatsItem
@@ -84,9 +84,9 @@ const Home: NextPage = ({
             />
           </StatsContainer>
         </div>
-      </section>
+      </div>
       <BottomVectorWaves url={"stats_bottom_wave2.svg"} />
-      <section>
+      <div>
         <Title>Projects</Title>
         <CardContainer>
           <ProjectCard
@@ -104,11 +104,12 @@ const Home: NextPage = ({
             Discord server it is on, and members in the Discord server. And soon
             it will be able to show stats about the Minecraft server.
           </ProjectCard>
-          <Card
+          <ProjectCard
             btnName="Repo"
             link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
             title="Observer Bot"
             thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
           >
             Observer Bot is a Discord bot I built for my Minecraft server in
             Discord.js. This bot mainly queries stats from a Minecraft server
@@ -117,9 +118,38 @@ const Home: NextPage = ({
             I would make one myself. The bot also shows information about the
             Discord server it is on, and members in the Discord server. And soon
             it will be able to show stats about the Minecraft server.
-          </Card>
-          <Card
+          </ProjectCard>
+          <ProjectCard
             btnName="Repo"
+            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+            title="Observer Bot"
+            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+          >
+            Observer Bot is a Discord bot I built for my Minecraft server in
+            Discord.js. This bot mainly queries stats from a Minecraft server
+            with ServerTAP installed and shows them in a Discord embed. I made
+            this because a lot of other solutions to do this sucked so I thought
+            I would make one myself. 
+          </ProjectCard>
+          <ProjectCard
+            btnName="Repo"
+            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+            title="Observer Bot"
+            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+          >
+            Observer Bot is a Discord bot I built for my Minecraft server in
+            Discord.js. This bot mainly queries stats from a Minecraft server
+            with ServerTAP installed and shows them in a Discord embed. I made
+            this because a lot of other solutions to do this sucked so I thought
+            I would make one myself. The bot also shows information about the
+            Discord server it is on, and members in the Discord server. And soon
+            it will be able to show stats about the Minecraft server.
+          </ProjectCard>
+          <ProjectCard
+            btnName="Repo"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
             link="https://github.com/analog-org"
             title="Analog"
             thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png"
@@ -131,10 +161,11 @@ const Home: NextPage = ({
             and another one for building bots with Typescript and NextJS. Analog
             will also need a plugin repo, a landing page, and several
             documentation pages.
-          </Card>
+          </ProjectCard>
 
-          <Card
+          <ProjectCard
             btnName="Repo"
+            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
             link="https://github.com/simpsmc"
             title="S.I.M.P.S"
             thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008509095491407942/firefox_bUFD7PrOIK.png"
@@ -145,11 +176,11 @@ const Home: NextPage = ({
             Discord bot admins can use to add and review the database of
             players. This bot is functional but the repo is private, and it uses
             Analog-TS a framework I built.
-          </Card>
+          </ProjectCard>
         </CardContainer>
-      </section>
+      </div>
       <TopVectorWaves url="bottom-wave4.svg" />
-      <section className="bg-[#C77DFF]">
+      <div className="bg-[#C77DFF]">
         <Title>Tools I use</Title>
         <Tabs.Group style="pills">
           <Tabs.Item title={"Frontend"}>
@@ -283,21 +314,21 @@ const Home: NextPage = ({
             </LangCardContainer>
           </Tabs.Item>
         </Tabs.Group>
-      </section>
+      </div>
       <BottomVectorWaves url="top-layered-waves4.svg" />
-      <section>
+      <div>
         <Title>What I'm upto</Title>
         <ProfileCard />
-      </section>
+      </div>
       <TopVectorWaves url="bottom-layered-waves2.svg" />
-      <section className="bg-[#C77DFF]">
+      <div className="bg-[#C77DFF]">
         <h1>I am BossDaily</h1>
         <p>
           Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
           TailwindCSS, Figma, and ❤️ If you want me to work for you, contact me
           at gboys2008@gmail.com or BossDaily#6016 on Discord
         </p>
-      </section>
+      </div>
     </div>
   );
 };

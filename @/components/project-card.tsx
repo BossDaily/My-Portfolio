@@ -40,7 +40,7 @@ export function ProjectCard({
         }}
         width="320"
       />
-      <CardContent className="p-4">
+      <CardContent className="p-4 ">
         <h2 className="text-2xl font-bold hover:text-gray-700 transition-all duration-200">
           {title}
         </h2>
@@ -51,18 +51,20 @@ export function ProjectCard({
             </Badge>
           ))}
         </h3>
-        <p className="mt-2 text-white hover:text-gray-700 transition-all duration-200">
-          {children}
-        </p>
-        <div className="flex mt-4 space-x-2">
-          <a href={`${link}`}>
-            <Button
-              className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200 bg-purple-600"
-              size="sm"
-            >
-              {btnName}
-            </Button>
-          </a>
+        <div className="">
+          <p className="mt-2 text-white hover:text-gray-700 transition-all duration-200">
+            {children}
+          </p>
+          <div className="flex mt-4 space-x-2 justify-center">
+            <a href={`${link}`}>
+              <Button
+                className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200 bg-purple-600"
+                size="sm"
+              >
+                {btnName}
+              </Button>
+            </a>
+          </div>
         </div>
       </CardContent>
     </Card>
