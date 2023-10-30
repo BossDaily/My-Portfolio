@@ -8,7 +8,7 @@ import Head from "next/head";
 import Image from "next/image";
 import BottomVectorWaves from "../components/Waves/BottomVectorWaves";
 import TopVectorWaves from "../components/Waves/TopVectorWaves";
-import Avatar from "../components/Avatar/Avatar";
+import DiscordAvatar from "../components/Avatar/Avatar";
 import HeroContainer from "../components/Hero/HeroContainer";
 import TypewriterComponent from "typewriter-effect";
 import StatsContainer from "../components/Stats/StatsContainer";
@@ -44,290 +44,295 @@ const Home: NextPage = ({
           content={`https://cdn.discordapp.com/avatars/${status?.discord_user.id}/${status?.discord_user.avatar}.png`}
         ></meta>
       </Head>
-      <div>
-        <HeroContainer>
-          <h1>Hello Im BossDaily 👋</h1>
-          <div className="flex-none flex-nowrap">
-            <Avatar />
-          </div>
-          <TypewriterComponent
-            options={{
-              strings: [
-                "Discord Bot Dev",
-                "Web Developer",
-                "Aspiring App Developer",
-                "Open Source Enthusiast",
-                "Minecraft server owner",
-                "Sigma Male",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </HeroContainer>
-      </div>
-      <TopVectorWaves url={"hero_layered_waves1.svg"} />
-      <div className="bg-[#C77DFF]">
-        <div className="items-center">
-          <StatsContainer>
-            <StatsItem
-              stat={`${github.data.user.repositoriesContributedTo.totalCount} Projects`}
-              icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      <div className="gap-2">
+        <div className="flex justify-center items-center">
+          <HeroContainer>
+            <h1>Hello Im BossDaily 👋</h1>
+            <div className="flex-none flex-nowrap">
+              <DiscordAvatar />
+            </div>
+            <TypewriterComponent
+              options={{
+                strings: [
+                  "Discord Bot Dev",
+                  "Web Developer",
+                  "Aspiring App Developer",
+                  "Open Source Enthusiast",
+                  "Minecraft server owner",
+                  "Sigma Male",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
             />
-            <StatsItem
-              stat={`${codeTime.data.text} of programming`}
-              icon="https://site-assets.fontawesome.com/releases/v6.1.1/svgs/solid/display-code.svg"
-            />
-            <StatsItem
-              stat={`${github.data.user.contributionsCollection.totalCommitContributions} Contributions`}
-              icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-            />
-          </StatsContainer>
+          </HeroContainer>
         </div>
-      </div>
-      <BottomVectorWaves url={"stats_bottom_wave2.svg"} />
-      <div>
-        <Title>Projects</Title>
-        <CardContainer>
-          <ProjectCard
-            btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-            title="Observer Bot"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-          >
-            Observer Bot is a Discord bot I built for my Minecraft server in
-            Discord.js. This bot mainly queries stats from a Minecraft server
-            with ServerTAP installed and shows them in a Discord embed. I made
-            this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. The bot also shows information about the
-            Discord server it is on, and members in the Discord server. And soon
-            it will be able to show stats about the Minecraft server.
-          </ProjectCard>
-          <ProjectCard
-            btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-            title="Observer Bot"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-          >
-            Observer Bot is a Discord bot I built for my Minecraft server in
-            Discord.js. This bot mainly queries stats from a Minecraft server
-            with ServerTAP installed and shows them in a Discord embed. I made
-            this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. The bot also shows information about the
-            Discord server it is on, and members in the Discord server. And soon
-            it will be able to show stats about the Minecraft server.
-          </ProjectCard>
-          <ProjectCard
-            btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-            title="Observer Bot"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-          >
-            Observer Bot is a Discord bot I built for my Minecraft server in
-            Discord.js. This bot mainly queries stats from a Minecraft server
-            with ServerTAP installed and shows them in a Discord embed. I made
-            this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. 
-          </ProjectCard>
-          <ProjectCard
-            btnName="Repo"
-            link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-            title="Observer Bot"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-          >
-            Observer Bot is a Discord bot I built for my Minecraft server in
-            Discord.js. This bot mainly queries stats from a Minecraft server
-            with ServerTAP installed and shows them in a Discord embed. I made
-            this because a lot of other solutions to do this sucked so I thought
-            I would make one myself. The bot also shows information about the
-            Discord server it is on, and members in the Discord server. And soon
-            it will be able to show stats about the Minecraft server.
-          </ProjectCard>
-          <ProjectCard
-            btnName="Repo"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            link="https://github.com/analog-org"
-            title="Analog"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png"
-          >
-            Analog is a project im working on that will be the best open source
-            discord bot available. I intend it to be easy to self-host, have a
-            webpanel, and have a plugin system/plugin market place. Im working
-            on building a bot template for building Discord bots in Typescript,
-            and another one for building bots with Typescript and NextJS. Analog
-            will also need a plugin repo, a landing page, and several
-            documentation pages.
-          </ProjectCard>
+        <TopVectorWaves url={"hero_layered_waves1.svg"} />
+        <div className="bg-[#C77DFF]">
+          <div className="items-center">
+            <StatsContainer>
+              <StatsItem
+                stat={`${github.data.user.repositoriesContributedTo.totalCount} Projects`}
+                icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              />
+              <StatsItem
+                stat={`${codeTime.data.text} of programming`}
+                icon="https://site-assets.fontawesome.com/releases/v6.1.1/svgs/solid/display-code.svg"
+              />
+              <StatsItem
+                stat={`${github.data.user.contributionsCollection.totalCommitContributions} Contributions`}
+                icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              />
+            </StatsContainer>
+          </div>
+        </div>
+        <BottomVectorWaves url={"stats_bottom_wave2.svg"} />
+        <div>
+          <Title>Projects</Title>
+          <CardContainer>
+            <ProjectCard
+              btnName="Repo"
+              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+              title="Observer Bot"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+            >
+              Observer Bot is a Discord bot I built for my Minecraft server in
+              Discord.js. This bot mainly queries stats from a Minecraft server
+              with ServerTAP installed and shows them in a Discord embed. I made
+              this because a lot of other solutions to do this sucked so I
+              thought I would make one myself. The bot also shows information
+              about the Discord server it is on, and members in the Discord
+              server. And soon it will be able to show stats about the Minecraft
+              server.
+            </ProjectCard>
+            <ProjectCard
+              btnName="Repo"
+              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+              title="Observer Bot"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+            >
+              Observer Bot is a Discord bot I built for my Minecraft server in
+              Discord.js. This bot mainly queries stats from a Minecraft server
+              with ServerTAP installed and shows them in a Discord embed. I made
+              this because a lot of other solutions to do this sucked so I
+              thought I would make one myself. The bot also shows information
+              about the Discord server it is on, and members in the Discord
+              server. And soon it will be able to show stats about the Minecraft
+              server.
+            </ProjectCard>
+            <ProjectCard
+              btnName="Repo"
+              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+              title="Observer Bot"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+            >
+              Observer Bot is a Discord bot I built for my Minecraft server in
+              Discord.js. This bot mainly queries stats from a Minecraft server
+              with ServerTAP installed and shows them in a Discord embed. I made
+              this because a lot of other solutions to do this sucked so I
+              thought I would make one myself.
+            </ProjectCard>
+            <ProjectCard
+              btnName="Repo"
+              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
+              title="Observer Bot"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+            >
+              Observer Bot is a Discord bot I built for my Minecraft server in
+              Discord.js. This bot mainly queries stats from a Minecraft server
+              with ServerTAP installed and shows them in a Discord embed. I made
+              this because a lot of other solutions to do this sucked so I
+              thought I would make one myself. The bot also shows information
+              about the Discord server it is on, and members in the Discord
+              server. And soon it will be able to show stats about the Minecraft
+              server.
+            </ProjectCard>
+            <ProjectCard
+              btnName="Repo"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+              link="https://github.com/analog-org"
+              title="Analog"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png"
+            >
+              Analog is a project im working on that will be the best open
+              source discord bot available. I intend it to be easy to self-host,
+              have a webpanel, and have a plugin system/plugin market place. Im
+              working on building a bot template for building Discord bots in
+              Typescript, and another one for building bots with Typescript and
+              NextJS. Analog will also need a plugin repo, a landing page, and
+              several documentation pages.
+            </ProjectCard>
 
-          <ProjectCard
-            btnName="Repo"
-            tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            link="https://github.com/simpsmc"
-            title="S.I.M.P.S"
-            thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008509095491407942/firefox_bUFD7PrOIK.png"
-          >
-            S.I.M.P.S. stands for Server Integrated Multi Punishment System,
-            aims to be an innovative and new global ban list of problematic
-            players in smaller Minecraft SMP communities. Im working on the
-            Discord bot admins can use to add and review the database of
-            players. This bot is functional but the repo is private, and it uses
-            Analog-TS a framework I built.
-          </ProjectCard>
-        </CardContainer>
-      </div>
-      <TopVectorWaves url="bottom-wave4.svg" />
-      <div className="bg-[#C77DFF]">
-        <Title>Tools I use</Title>
-        <Tabs.Group style="pills">
-          <Tabs.Item title={"Frontend"}>
-            <LangCardContainer>
-              <LangCard
-                lang={"React"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                }
-              />
-              <LangCard
-                lang={"NextJS"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Tailwind"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                }
-              />
-              <LangCard
-                lang={"HTML"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                }
-              />
-              <LangCard
-                lang={"CSS"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                }
-              />
-              <LangCard
-                lang={"JavaScript"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Typescript"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                }
-              />
-            </LangCardContainer>
-          </Tabs.Item>
-          <Tabs.Item title={"Backend"}>
-            <LangCardContainer>
-              <LangCard
-                lang={"Node.JS"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                }
-              />
-              <LangCard
-                lang={"MySQL"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Prisma"}
-                icon={
-                  "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
-                }
-              />
-              <LangCard
-                lang={"Discord.JS"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
-                }
-              />
-            </LangCardContainer>
-          </Tabs.Item>
-          <Tabs.Item title={"Tools"}>
-            <LangCardContainer>
-              <LangCard
-                lang={"Git"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                }
-              />
-              <LangCard
-                lang={"VSCode"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Linux"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Figma"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                }
-              />
-              <LangCard
-                lang={"Github"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                }
-              />
-              <LangCard
-                lang={"IntelliJ"}
-                icon={
-                  "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
-                }
-              />
-            </LangCardContainer>
-          </Tabs.Item>
-          <Tabs.Item title={"Productivity"}>
-            <LangCardContainer>
-              <LangCard
-                lang={"Trello"}
-                icon={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
-                }
-              />
-              <LangCard
-                lang={"Notion"}
-                icon={
-                  "https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png"
-                }
-              />
-            </LangCardContainer>
-          </Tabs.Item>
-        </Tabs.Group>
-      </div>
-      <BottomVectorWaves url="top-layered-waves4.svg" />
-      <div>
-        <Title>What I'm upto</Title>
-        <ProfileCard />
-      </div>
-      <TopVectorWaves url="bottom-layered-waves2.svg" />
-      <div className="bg-[#C77DFF]">
-        <h1>I am BossDaily</h1>
-        <p>
-          Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
-          TailwindCSS, Figma, and ❤️ If you want me to work for you, contact me
-          at gboys2008@gmail.com or BossDaily#6016 on Discord
-        </p>
+            <ProjectCard
+              btnName="Repo"
+              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
+              link="https://github.com/simpsmc"
+              title="S.I.M.P.S"
+              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008509095491407942/firefox_bUFD7PrOIK.png"
+            >
+              S.I.M.P.S. stands for Server Integrated Multi Punishment System,
+              aims to be an innovative and new global ban list of problematic
+              players in smaller Minecraft SMP communities. Im working on the
+              Discord bot admins can use to add and review the database of
+              players. This bot is functional but the repo is private, and it
+              uses Analog-TS a framework I built.
+            </ProjectCard>
+          </CardContainer>
+        </div>
+        <TopVectorWaves url="bottom-wave4.svg" />
+        <div className="bg-[#C77DFF]">
+          <Title>Tools I use</Title>
+          <Tabs.Group style="pills">
+            <Tabs.Item title={"Frontend"}>
+              <LangCardContainer>
+                <LangCard
+                  lang={"React"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"NextJS"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Tailwind"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  }
+                />
+                <LangCard
+                  lang={"HTML"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"CSS"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"JavaScript"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Typescript"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  }
+                />
+              </LangCardContainer>
+            </Tabs.Item>
+            <Tabs.Item title={"Backend"}>
+              <LangCardContainer>
+                <LangCard
+                  lang={"Node.JS"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"MySQL"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Prisma"}
+                  icon={
+                    "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
+                  }
+                />
+                <LangCard
+                  lang={"Discord.JS"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
+                  }
+                />
+              </LangCardContainer>
+            </Tabs.Item>
+            <Tabs.Item title={"Tools"}>
+              <LangCardContainer>
+                <LangCard
+                  lang={"Git"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"VSCode"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Linux"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Figma"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Github"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  }
+                />
+                <LangCard
+                  lang={"IntelliJ"}
+                  icon={
+                    "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
+                  }
+                />
+              </LangCardContainer>
+            </Tabs.Item>
+            <Tabs.Item title={"Productivity"}>
+              <LangCardContainer>
+                <LangCard
+                  lang={"Trello"}
+                  icon={
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                  }
+                />
+                <LangCard
+                  lang={"Notion"}
+                  icon={
+                    "https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png"
+                  }
+                />
+              </LangCardContainer>
+            </Tabs.Item>
+          </Tabs.Group>
+        </div>
+        <BottomVectorWaves url="top-layered-waves4.svg" />
+        <div>
+          <Title>What I'm upto</Title>
+          <ProfileCard />
+        </div>
+        <TopVectorWaves url="bottom-layered-waves2.svg" />
+        <div className="bg-[#C77DFF]">
+          <h1>I am BossDaily</h1>
+          <p>
+            Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
+            TailwindCSS, Figma, and ❤️ If you want me to work for you, contact
+            me at gboys2008@gmail.com or BossDaily#6016 on Discord
+          </p>
+        </div>
       </div>
     </div>
   );

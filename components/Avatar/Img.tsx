@@ -23,7 +23,8 @@ const Img: NextPage<Props> = (props) => {
                 alt='BossDailys pfp'
                 className="rounded-full"
                 height={1024}
-                width={1024}
+                width={1024 }
+               
                 loader={loaderProp}
                 style={{
                     maxWidth: "100%",
