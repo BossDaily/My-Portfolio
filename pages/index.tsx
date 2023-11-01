@@ -58,8 +58,6 @@ const Home: NextPage = ({
                   "Web Developer",
                   "Aspiring App Developer",
                   "Open Source Enthusiast",
-                  "Minecraft server owner",
-                  "Sigma Male",
                 ],
                 autoStart: true,
                 loop: true,
