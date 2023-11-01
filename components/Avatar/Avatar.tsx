@@ -25,61 +25,69 @@ const DiscordAvatar: NextPage = () => {
           trigger="hover"
           animation="duration-500"
         >
-          {/* <Img url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} borderColor="rgb(59, 165, 93)" /> */}
-          <Avatar className="ring ring-[#3ba55d] w-max h-max" >
-            <AvatarImage src={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`} className="max-w-sm max-h-sm" />
+          <Avatar className="ring ring-[#3ba55d] w-max h-max">
+            <AvatarImage
+              src={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
+              className="max-w-sm max-h-sm"
+            />
           </Avatar>
         </Tooltip>
       </div>
     );
   } else if (loading === false && status?.discord_status === "idle") {
     return (
-      <div className="relative overflow-visible">
+      <div className="relative overflow-visible justify-self-center items-center">
         <Tooltip
-          content={`Idle on Discord ${platform}`}
+          content={`Online on Discord ${platform}`}
           style="dark"
           placement="bottom"
           trigger="hover"
           animation="duration-500"
         >
-          <Img
-            url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
-            borderColor="rgb(250, 168, 26)"
-          />
+          <Avatar className="ring ring-[#faa81a] w-max h-max">
+            <AvatarImage
+              src={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
+              className="max-w-sm max-h-sm"
+            />
+          </Avatar>
         </Tooltip>
       </div>
     );
   } else if (loading === false && status?.discord_status === "dnd") {
     return (
-      <div className="relative overflow-visible">
+      <div className="relative overflow-visible justify-self-center items-center">
         <Tooltip
-          content={`DND on Discord ${platform}`}
+          content={`Online on Discord ${platform}`}
           style="dark"
           placement="bottom"
           trigger="hover"
           animation="duration-500"
         >
-          <Img
-            url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
-            borderColor="rgb(237, 66, 69)"
-          />
+          <Avatar className="ring ring-[#ed4245] w-max h-max">
+            <AvatarImage
+              src={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
+              className="max-w-sm max-h-sm"
+            />
+          </Avatar>
         </Tooltip>
       </div>
     );
   } else if (loading === false && status?.discord_status === "offline") {
     return (
-      <div className="relative overflow-visible">
+      <div className="relative overflow-visible justify-self-center items-center">
         <Tooltip
-          content={`Not on Discord`}
+          content={`Online on Discord ${platform}`}
           style="dark"
           placement="bottom"
           trigger="hover"
           animation="duration-500"
         >
-          <Img
-            url={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
-            borderColor="rgb(116, 127, 141)"
-          />
+          <Avatar className="ring ring-[#747f8d] w-max h-max">
+            <AvatarImage
+              src={`https://cdn.discordapp.com/avatars/${status.discord_user.id}/${status.discord_user.avatar}.png`}
+              className="max-w-sm max-h-sm"
+            />
+          </Avatar>
         </Tooltip>
       </div>
     );
