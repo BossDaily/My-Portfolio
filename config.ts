@@ -77,13 +77,43 @@ export const config = {
         "https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png",
       description: `Discord link embed is a website that allows you to dynamically create an embed on Discord only using a URL. 
       It uses NextJS's dynamic routes to create a page for each URL, with opengraph and twitter metadata.`,
-      tags: [
-        "Next.JS",
-        "Typescript",
-        "REST-APIs",
-        "TailwindCSS",
+      tags: ["Next.JS", "Typescript", "REST-APIs", "TailwindCSS"],
+    },
+  ],
+  languages: [
+    {
+      type: "Front-End",
+      languages: [
+        {
+          name: "React",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "NextJS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        },
+        {
+          name: "TailwindCSS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        },
+        {
+          name: "HTML",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        },
+        {
+          name: "CSS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+        {
+          name: "Javascript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "Typescript",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        },
+
       ],
     },
   ],
-  languages: [{ type: "language", languages: [{ name: "name", img: "img" }] }],
 };
