@@ -24,6 +24,7 @@ import LangCardContainer from "../components/LangCard/LangCardContainer";
 import ProfileCard from "../components/Profile/ProfileCard";
 import { useLanyard } from "react-use-lanyard/dist";
 import { ProjectCard } from "../@/components/project-card";
+import { config } from "../config";
 
 const Home: NextPage = ({
   codeTime,
@@ -88,97 +89,17 @@ const Home: NextPage = ({
         <div>
           <Title>Projects</Title>
           <CardContainer>
-            <ProjectCard
-              btnName="Repo"
-              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-              title="Observer Bot"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            >
-              Observer Bot is a Discord bot I built for my Minecraft server in
-              Discord.js. This bot mainly queries stats from a Minecraft server
-              with ServerTAP installed and shows them in a Discord embed. I made
-              this because a lot of other solutions to do this sucked so I
-              thought I would make one myself. The bot also shows information
-              about the Discord server it is on, and members in the Discord
-              server. And soon it will be able to show stats about the Minecraft
-              server.
-            </ProjectCard>
-            <ProjectCard
-              btnName="Repo"
-              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-              title="Observer Bot"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            >
-              Observer Bot is a Discord bot I built for my Minecraft server in
-              Discord.js. This bot mainly queries stats from a Minecraft server
-              with ServerTAP installed and shows them in a Discord embed. I made
-              this because a lot of other solutions to do this sucked so I
-              thought I would make one myself. The bot also shows information
-              about the Discord server it is on, and members in the Discord
-              server. And soon it will be able to show stats about the Minecraft
-              server.
-            </ProjectCard>
-            <ProjectCard
-              btnName="Repo"
-              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-              title="Observer Bot"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            >
-              Observer Bot is a Discord bot I built for my Minecraft server in
-              Discord.js. This bot mainly queries stats from a Minecraft server
-              with ServerTAP installed and shows them in a Discord embed. I made
-              this because a lot of other solutions to do this sucked so I
-              thought I would make one myself.
-            </ProjectCard>
-            <ProjectCard
-              btnName="Repo"
-              link="https://github.com/ComparatorCraftSMP/observer-bot-ts"
-              title="Observer Bot"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-            >
-              Observer Bot is a Discord bot I built for my Minecraft server in
-              Discord.js. This bot mainly queries stats from a Minecraft server
-              with ServerTAP installed and shows them in a Discord embed. I made
-              this because a lot of other solutions to do this sucked so I
-              thought I would make one myself. The bot also shows information
-              about the Discord server it is on, and members in the Discord
-              server. And soon it will be able to show stats about the Minecraft
-              server.
-            </ProjectCard>
-            <ProjectCard
-              btnName="Repo"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-              link="https://github.com/analog-org"
-              title="Analog"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png"
-            >
-              Analog is a project im working on that will be the best open
-              source discord bot available. I intend it to be easy to self-host,
-              have a webpanel, and have a plugin system/plugin market place. Im
-              working on building a bot template for building Discord bots in
-              Typescript, and another one for building bots with Typescript and
-              NextJS. Analog will also need a plugin repo, a landing page, and
-              several documentation pages.
-            </ProjectCard>
-
-            <ProjectCard
-              btnName="Repo"
-              tags={["Discord.js", "Typescript", "Node.js", "Minecraft"]}
-              link="https://github.com/simpsmc"
-              title="S.I.M.P.S"
-              thumbnail="https://media.discordapp.net/attachments/762750022495764491/1008509095491407942/firefox_bUFD7PrOIK.png"
-            >
-              S.I.M.P.S. stands for Server Integrated Multi Punishment System,
-              aims to be an innovative and new global ban list of problematic
-              players in smaller Minecraft SMP communities. Im working on the
-              Discord bot admins can use to add and review the database of
-              players. This bot is functional but the repo is private, and it
-              uses Analog-TS a framework I built.
-            </ProjectCard>
+            {config.projects.map((project) => ( 
+              
+              <ProjectCard 
+                btnName={project.btnName}
+                link={project.url}
+                title={project.name}
+                thumbnail={project.thumbnail}
+                tags={project.tags}
+              >
+                {project.description}
+              </ProjectCard>  ))}
           </CardContainer>
         </div>
         <TopVectorWaves url="bottom-wave4.svg" />
