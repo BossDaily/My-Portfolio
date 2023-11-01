@@ -35,7 +35,7 @@ const Home: NextPage = ({
     socket: true,
   });
   return (
-    <div className="m-0 font-helvetica text-white bg-[#10002B]">
+    <div className="m-0 font-helvetica text-white bg-[#10002B] flex flex-col gap-2">
       <Head>
         <meta name="theme-color" content="#1da1f2" />
         <meta name="msapplication-TileColor" content="#1da1f2" />
@@ -86,7 +86,7 @@ const Home: NextPage = ({
           </div>
         </div>
         <BottomVectorWaves url={"stats_bottom_wave2.svg"} />
-        <div>
+        <div className="flex flex-col gap-4 justify-center items-center">
           <Title>Projects</Title>
           <CardContainer>
             {config.projects.map((project) => ( 
@@ -103,7 +103,7 @@ const Home: NextPage = ({
           </CardContainer>
         </div>
         <TopVectorWaves url="bottom-wave4.svg" />
-        <div className="bg-[#C77DFF]">
+        <div className="bg-[#C77DFF] flex flex-col gap-4 justify-center items-center">
           <Title>Tools I use</Title>
           <Tabs.Group style="pills">
             <Tabs.Item title={"Frontend"}>
@@ -239,12 +239,12 @@ const Home: NextPage = ({
           </Tabs.Group>
         </div>
         <BottomVectorWaves url="top-layered-waves4.svg" />
-        <div>
+        <div className="flex flex-col gap-4 justify-center items-center flex-grow-0">
           <Title>What I'm upto</Title>
           <ProfileCard />
         </div>
         <TopVectorWaves url="bottom-layered-waves2.svg" />
-        <div className="bg-[#C77DFF]">
+        <div className="bg-[#C77DFF] flex flex-col gap-4 justify-center items-center">
           <h1>I am BossDaily</h1>
           <p>
             Made by BossDaily with Typescript, NextJS, Apollo GraphQL,
