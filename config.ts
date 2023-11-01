@@ -112,7 +112,69 @@ export const config = {
           name: "Typescript",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
         },
-
+      ],
+    },
+    {
+      type: "Backend",
+      languages: [
+        {
+          name: "Node.JS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          name: "MySQL",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        },
+        {
+          name: "Prisma",
+          img: "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png",
+        },
+        {
+          name: "Discord.JS",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg",
+        },
+      ],
+    },
+    {
+      type: "Tools",
+      languages: [
+        {
+          name: "Git",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
+        {
+          name: "VSCode",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+        },
+        {
+          name: "Linux",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+        },
+        {
+          name: "Figma",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        },
+        {
+          name: "Github",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        },
+        {
+          name: "IntelliJ",
+          img: "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg",
+        },
+      ],
+    },
+    {
+      type: "Productivity",
+      languages: [
+        {
+          name: "Trello",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+        },
+        {
+          name: "Notion",
+          img: "https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png",
+        },
       ],
     },
   ],

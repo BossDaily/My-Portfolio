@@ -89,9 +89,8 @@ const Home: NextPage = ({
         <div className="flex flex-col gap-4 justify-center items-center">
           <Title>Projects</Title>
           <CardContainer>
-            {config.projects.map((project) => ( 
-              
-              <ProjectCard 
+            {config.projects.map((project) => (
+              <ProjectCard
                 btnName={project.btnName}
                 link={project.url}
                 title={project.name}
@@ -99,143 +98,23 @@ const Home: NextPage = ({
                 tags={project.tags}
               >
                 {project.description}
-              </ProjectCard>  ))}
+              </ProjectCard>
+            ))}
           </CardContainer>
         </div>
         <TopVectorWaves url="bottom-wave4.svg" />
         <div className="bg-[#C77DFF] flex flex-col gap-4 justify-center items-center">
           <Title>Tools I use</Title>
           <Tabs.Group style="pills">
-            <Tabs.Item title={"Frontend"}>
-              <LangCardContainer>
-                <LangCard
-                  lang={"React"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"NextJS"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Tailwind"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  }
-                />
-                <LangCard
-                  lang={"HTML"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"CSS"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"JavaScript"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Typescript"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                  }
-                />
-              </LangCardContainer>
-            </Tabs.Item>
-            <Tabs.Item title={"Backend"}>
-              <LangCardContainer>
-                <LangCard
-                  lang={"Node.JS"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"MySQL"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Prisma"}
-                  icon={
-                    "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png"
-                  }
-                />
-                <LangCard
-                  lang={"Discord.JS"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
-                  }
-                />
-              </LangCardContainer>
-            </Tabs.Item>
-            <Tabs.Item title={"Tools"}>
-              <LangCardContainer>
-                <LangCard
-                  lang={"Git"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"VSCode"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Linux"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Figma"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Github"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  }
-                />
-                <LangCard
-                  lang={"IntelliJ"}
-                  icon={
-                    "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg"
-                  }
-                />
-              </LangCardContainer>
-            </Tabs.Item>
-            <Tabs.Item title={"Productivity"}>
-              <LangCardContainer>
-                <LangCard
-                  lang={"Trello"}
-                  icon={
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
-                  }
-                />
-                <LangCard
-                  lang={"Notion"}
-                  icon={
-                    "https://media.discordapp.net/attachments/965985896967077888/1024337530247729162/notion-logo-no-background.png"
-                  }
-                />
-              </LangCardContainer>
-            </Tabs.Item>
+            {config.languages.map((lang) => (
+              <Tabs.Item title={lang.type}>
+                <LangCardContainer>
+                  {lang.languages.map((icon) => (
+                    <LangCard lang={icon.name} icon={icon.img} />
+                  ))}
+                </LangCardContainer>
+              </Tabs.Item>
+            ))}
           </Tabs.Group>
         </div>
         <BottomVectorWaves url="top-layered-waves4.svg" />
