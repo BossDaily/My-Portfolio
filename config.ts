@@ -69,6 +69,21 @@ export const config = {
         "Minecraft",
       ],
     },
+    {
+      name: "Discord Link Embed",
+      url: "https://discord-link-kappa.vercel.app/",
+      btnName: "Website",
+      thumbnail:
+        "https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png",
+      description: `Discord link embed is a website that allows you to dynamically create an embed on Discord only using a URL. 
+      It uses NextJS's dynamic routes to create a page for each URL, with opengraph and twitter metadata.`,
+      tags: [
+        "Next.JS",
+        "Typescript",
+        "REST-APIs",
+        "TailwindCSS",
+      ],
+    },
   ],
   languages: [{ type: "language", languages: [{ name: "name", img: "img" }] }],
 };
