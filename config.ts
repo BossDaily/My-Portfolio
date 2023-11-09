@@ -6,7 +6,7 @@ export const config = {
       url: "https://github.com/ComparatorCraftSMP/observer-bot-ts",
       btnName: "Repo",
       thumbnail:
-        "https://media.discordapp.net/attachments/762750022495764491/1008492252978479204/Discord_gjFYUMtrES.png",
+        "https://cdn.discordapp.com/attachments/765808912355819564/1172286029563183165/Screenshot_2023-11-09_152212.png?ex=655fc371&is=654d4e71&hm=bc97a42d29f924be353d0c3a975d28b8e43309855b7c79e08b9933fcf6905e9f&",
       description: `Observer Bot is a Discord bot I built for my Minecraft server in
       Discord.js. This bot mainly queries stats from a Minecraft server
       with ServerTAP installed and shows them in a Discord embed. I made
@@ -29,7 +29,7 @@ export const config = {
       url: "https://github.com/analog-org",
       btnName: "Repo",
       thumbnail:
-        "https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png",
+        "https://cdn.discordapp.com/attachments/765802538023780353/1172281499970711643/Analog_v2_Dark_theme_Desktop_screensot.png?ex=655fbf39&is=654d4a39&hm=40ce1d70ea26875f70c6b495cac3866fd4e90875ca2103c9be6a2511da8b2fb6&",
       description: `Analog is a project im working on that will be the best open
       source discord bot available. I intend it to be easy to self-host,
       have a webpanel, and have a plugin system/plugin market place. Im
@@ -54,7 +54,7 @@ export const config = {
       url: "https://github.com/simpsmc",
       btnName: "Repo",
       thumbnail:
-        "https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png",
+        "https://cdn.discordapp.com/attachments/765808912355819564/1172288286597853315/Screenshot_2023-11-09_153052.png?ex=655fc58b&is=654d508b&hm=c7d028b0f6d974a16651b63449c76eefc52b2c1de5f9fbd0508510f34b35711a&",
       description: `S.I.M.P.S. stands for Server Integrated Multi Punishment System,
       aims to be an innovative and new global ban list of problematic
       players in smaller Minecraft SMP communities. I built them a
@@ -74,7 +74,7 @@ export const config = {
       url: "https://discord-link-kappa.vercel.app/",
       btnName: "Website",
       thumbnail:
-        "https://media.discordapp.net/attachments/762750022495764491/1008503532212723833/firefox_l4bUPTd4zu.png",
+        "https://cdn.discordapp.com/attachments/765801416680931331/1172290865004298360/Screenshot_2023-11-09_154318.png?ex=655fc7f2&is=654d52f2&hm=62838e45128afab31249e4418fdef4ef21fe46ed171eb215ada9082b3ca0979f&",
       description: `Discord link embed is a website that allows you to dynamically create an embed on Discord only using a URL. 
       It uses NextJS's dynamic routes to create a page for each URL, with opengraph and twitter metadata.`,
       tags: ["Next.JS", "Typescript", "REST-APIs", "TailwindCSS"],
